@@ -1,0 +1,28 @@
+@font-face {
+    font-family:'titcurriculum' ;
+    src: url(./fonts/Catchye.otf);
+}
+body{
+    background-color: rgb(161, 247, 149);
+}
+h1{
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'titcurriculum','Arial','serif';
+    letter-spacing: 3pt;
+}
+div{
+    text-align: center;
+}
+
+span{
+    font-size: 24pt;
+    font-weight: 515;
+    font-family: 'titcurriculum','Arial','serif';
+    letter-spacing: 2pt;
+} 
+
+p{
+    text-align: center;
+    font-size: 13pt;
+}

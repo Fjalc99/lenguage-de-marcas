@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'h1';
+    src: url(../ejercicio1/fonts/LiberationSans-Italic.ttf);
+}
+h1{
+    width: 1250px;
+    height: 250px;
+    background-color: rgb(255, 189, 135);
+    margin: auto;
+    text-align: center;
+    font-size: 35pt;
+    border: 5px green dotted;
+    border-radius: 15px;
+    font-family: 'h1';
+    color: green;
+}

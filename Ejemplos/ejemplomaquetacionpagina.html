@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        nav{
+
+            border: 3px solid green;
+            display:flex;
+           /*justify-content:space-between; con esto justificamos el texto*/
+        }
+
+       /*li{
+            border: 2px solid red;
+            list-style-type: none;
+            flex-basis: 10%;
+             flex-grow: 1;
+        }
+        li.doble{
+            flex-grow: 2;
+        }
+
+        li.triple{
+            flex-grow: 3 ;
+        } */
+
+        /* 
+        Valores tipicos que se suelen poner: 
+        flex 1 1 auto;
+        flex 0 0 25%;  */
+        
+        
+        
+       p{
+            border: 1px solid red;
+        }
+        section p img{
+            width: 100%;
+        }
+
+        section{
+            border: 3px solid blue;
+            width: 750px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        section>p{
+            flex: 0 1 35%;
+        }
+
+        section>p+p{
+            flex: 0 1 40%;  
+            }
+
+            section div{
+                flex:  0 1 25%;
+            }
+
+        p.boton{
+            background-color: burlywood;
+            text-align: center;
+            padding: 8px;
+        } 
+
+    </style>
+</head>
+<body>
+<section>
+    <p><img src="../ejerciciosUD2/img/okinawa.jpg" alt="okinawa"></p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt fugiat eius, veniam sapiente dignissimos, ex quibusdam corporis modi, inventore reiciendis unde animi voluptate! Doloremque deleniti quas eveniet laudantium error exercitationem?</p>
+    <div>  
+        <p class="boton">Pulsa aquí</p>
+        <p class="boton">Pulsa aquí</p>
+    </div> 
+</section>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Kristen ITC' ;
+    src: url(./fonts/kristen-itc.ttf);
+}
+
+p{
+    width: 800px;
+    height: 565px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+    border: 0px;
+    
+    text-align: center;
+    font-family: 'Kristen ITC', 'Berlin Sans FB', Arial;
+    color: white;
+    font-size: 35pt;
+    font-variant: small-caps;
+
+
+    position: relative;
+    display: inline-block;
+    background-image: url(./img/fondo_trama.png);
+    background-size: cover;
+ 
+    
+
+    
+}

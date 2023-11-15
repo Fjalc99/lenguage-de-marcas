@@ -1,0 +1,19 @@
+
+p{
+    font-size: 12pt;
+    font-weight: 500;
+    font-family: Arial;
+    text-align: justify;
+}   
+/*Asi seria un parrrafo mas o menos estandar */
+.cursiva{
+    font-style: italic;
+}
+
+img.centrado{
+    text-align: center;
+}
+
+/* Para que no salga el enlace subrayado se pone text-decoration:none */
+/* Para centrar una caja de parrafor hay que poner la etiqueta margin 0 auto */ 
+/* text-shadow  

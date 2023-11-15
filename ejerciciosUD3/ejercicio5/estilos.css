@@ -1,0 +1,190 @@
+@font-face{
+    font-family: "globo" ;
+    src: url(./fonts/Valoon.ttf);
+}
+@font-face{
+    font-family: "nube";  
+    src: url(./fonts/MCKLSH__.ttf);
+}
+
+@font-face{
+    font-family:"titcomic";
+    src: url(./fonts/Chubby\ Relief.ttf);
+}
+@font-face{
+    font-family: "confondo";
+    src: url(./fonts/Sketch\ 3D.otf);
+}
+@font-face {
+    font-family: "donut";
+    src: url(./fonts/Kids\ Donuts.otf);
+}
+@font-face {
+    font-family: "dragon";
+    src: url(./fonts/DRAGON\ KIDS.otf);
+}
+@font-face {
+    font-family: "bubble";
+    src: url(./fonts/BubbleWaterRegular.ttf);
+}
+p{
+    text-align: center;
+    font-size: 70pt;
+    letter-spacing: 200px;
+}
+
+body{
+    background-color: rgb(211, 245, 255);
+}
+h1{
+    text-align: center;
+    font-family: "confondo";
+    color: rgb(0, 109, 128);
+    font-size: 45pt;
+}
+.letraA{
+    color: rgb(0, 68, 255);
+    font-family: "globo";
+}
+.letraB{
+    color: brown;
+    font-family: "donut";
+}
+.letraC{
+    color: blueviolet;
+    font-family: "titcomic";
+}
+.letraCH{
+    color: rgb(255, 0, 0);
+    font-family: "confondo";
+    letter-spacing: normal;
+}
+.letraD{
+    color: rgb(2, 211, 19);
+    font-family: "globo";    
+}
+.letraE{
+    color: tomato;
+    font-family: "bubble";
+}
+
+.letraF{
+    color: burlywood;
+    font-family: "dragon";
+}
+.letraG{
+    color: deeppink;
+    font-family: "confondo";
+}
+
+.letraH{
+    color: crimson;
+    font-family: "donut";
+}
+
+.letraI{
+    color: darkgoldenrod;
+    font-family: "confondo";
+}
+
+.letraJ{
+    color: cornflowerblue;
+    font-family: "globo";
+}
+
+.letraK{
+    color: darkgreen;
+    font-family: "nube";
+}
+
+.letraL{
+    color: darkorange;
+    font-family: "donut";
+}
+
+.letraLL{
+    color: darkmagenta;
+    font-family: "titcomic";
+    letter-spacing: normal;
+}
+
+.letraM{
+    color: darksalmon;
+    font-family: "confondo";
+}
+
+.letraN{
+    color: fuchsia;
+    font-family: "globo";
+}
+
+.letraÑ{
+    color: rgb(255, 59, 52);
+    font-family: "nube";
+}
+
+.letraO{
+    color: indigo;
+    font-family: "donut";
+}
+
+.letraP{
+    color: sienna;
+    font-family: "confondo";
+}
+
+.letraQ{
+    color: brown;
+    font-family: "titcomic";
+}
+
+.letraR{
+    color: rgb(2, 102, 19);
+    font-family: "dragon";
+}
+
+.letraRR{
+    color: blue;
+    font-family: "nube";
+    letter-spacing: normal;
+}
+
+.letraS{
+    color: chocolate;
+    font-family: "confondo";
+}
+
+.letraT{
+    color: violet;
+    font-family: "bubble";
+}
+
+.letraU{
+    color: seagreen;
+    font-family: "nube";
+}
+
+.letraV{
+    color: darkred;
+    font-family: "globo";
+}
+
+.letraW{
+    color: darkolivegreen;
+    font-family: "confondo";
+}
+
+.letraX{
+    color: chocolate;
+    font-family: "donut";
+}
+
+.letraY{
+    color: mediumvioletred;
+    font-family: "globo";
+}
+
+.letraZ{
+    color: dodgerblue;
+    font-family: "titcomic";
+}
