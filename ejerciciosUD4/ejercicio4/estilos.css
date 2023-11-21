@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+#pagina{
+    width: 90%;
+    margin: 0 auto;
+    min-width: 650px;
+}
+
+#contenido article{
+    border: 2px solid green;
+}
+
+#pagina #contenido {
+    display: flex;
+}
+#contenido main{
+    flex: 1 1 60%;
+    padding: 20px 3%;
+    background-color: bisque;
+}
+#pagina header p{
+    width: 100%;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+    border: 2px solid black;
+}

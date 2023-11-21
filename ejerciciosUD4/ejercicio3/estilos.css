@@ -14,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: bisque;
+    border: 2px solid black;
 }
 
 #pagina #contenido{
@@ -29,23 +30,28 @@
     color: rgb(255, 255, 255);
     list-style-type: none;
     padding: 20px 3%;
+    border: 2px solid black;
 }
 
 #contenido main{
     flex: 1 1 60%;
     padding: 20px 3%;
     background-color: bisque;
-}
-a{
-    text-decoration: none;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 #pagina footer{
     background-color:rgb(252, 193, 122);
     display: flex;
+    border-left: 2px solid black;
+    border-right: 2px solid black ;
+    border-bottom: 2px solid black;
 }
 
 #envolvente footer #piezizq{
     padding: 10px 15%;
     flex: 1 1 50%;
+    border: 2px solid black;
 }
