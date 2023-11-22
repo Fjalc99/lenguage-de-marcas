@@ -1,0 +1,50 @@
+
+body{
+
+ background-image: url(../img/monteAscuas.png);
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+.flecha{
+
+    float: left;
+    width: 10%;
+}
+
+.img{
+
+    padding-left: 400px;
+    width: 32%;
+    
+}
+
+#carrusel{
+
+    padding-top: 200px;
+}
+
+#pieDeFoto a{
+    text-decoration: none;
+    color:black;
+}
+
+#pieDeFoto a:hover{
+
+    color: yellow;
+}
+
+
+footer{
+
+    display: flex;
+    background-color: red;
+    list-style-type: none;
+    height: 80px;
+    margin-top: 100px;
+    justify-content: space-around;
+    font-size: 30pt;
+    padding-top: 35px;
+    padding-left: 100px;
+}
+

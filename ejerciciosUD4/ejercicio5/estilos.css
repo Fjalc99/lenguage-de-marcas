@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+#pagina {
+    width: 85%;
+    margin: 0 auto;
+    min-width: 650px;
+}
+
+#pagina header {
+    width: 100%;
+    background-color: rgb(37, 150, 190);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#pagina header h1{
+    color: white;
+    text-align: center;
+}
+nav{
+    display: flex;
+    background-color: rgba(155, 187, 89,255);
+}
+ nav h2{
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+ }
+
+ #pagina #informacion{
+    display: flex;
+    align-items:stretch ;
+    flex-direction:row ;
+    justify-content: space-between;
+ }
+
+ #pagina #informacion main{
+    flex: 1 1 60%;
+    padding: 20px 3%;
+ }
+
+ #pagina #informacion #izquierda{
+    width: 25%;
+    flex: 1 1 25%;  
+    background-color: rgb(37, 150, 190);
+    color: white;
+ }
+
+ #pagina #informacion #izquierda h1{
+    text-align: center;
+    font-size: 20px;
+ }
+
+ #pagina #informacion #izquierda p{
+    text-align: left;
+    margin-left: 10px;
+ }
+
+ #pagina #informacion main{
+    width: 50%;
+ }
+ #pagina #informacion main h1{
+    font-size: 25px;
+ }
+
+#pagina #informacion main p{
+    font-size: 15px;
+}
+
+#pagina #informacion #derecha{
+    width: 25%;
+    flex: 1 1 25%;
+    background-color: rgb(37, 150, 190);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+#pagina #informacion #derecha img{
+    width: 100px;
+    margin-top: 10px;
+}
+
+#pagina #informacion #derecha .publicidad{
+    background-color: white;
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 70px;
+    border-radius: 20px;
+}
+
+#pagina #informacion #derecha .publicidad p{
+    font-size: 20px;
+    padding-top: 5px;
+    color: black;
+    width: 75%;
+    margin: 10px;
+}
+
+#pagina footer{
+    background-color: rgba(155, 187, 89,255);
+    display: flex;
+    flex: 1 1 50%;
+    padding-left: 30px;
+}
