@@ -28,12 +28,17 @@ header{
     main>div{
         border: 1px rgb(0, 255, 34) solid;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;  
+    }
+    
+    main>div>.pokemon>img{
+        height: 500px;
         background-image: url(img/ruta.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 3000px;
     }
-    main>div>.flecha{
+
+    main>div>.flechaizq{
         width: 10%;
         border: 1px black solid;
         padding: 2%;
@@ -43,11 +48,31 @@ header{
         
     }
 
-    main>div>.flecha>img{
-        width: 80%;
-
-
+    main>div>.flechader{
+        width: 10%;
+        border: 1px black solid;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        border: 1px rgb(0, 47, 255) solid;
+        
     }
+    
+    main>div>.flechader{
+        background-color: lightgreen;
+    }
+    main>div>.flechader>img{
+        width: 80%;
+    }
+
+    main>div>.flechaizq{
+        background-color: lightgreen;
+    }
+    main>div>.flechaizq>img{
+        width: 80%;
+    }
+
+
     footer{
         background-color: gray;
         width: auto;
