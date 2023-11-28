@@ -19,6 +19,19 @@ header{
         width: 30%;
         border: 1px red solid;
     }
+    aside>h2{
+        text-align: center;
+
+    }
+    aside li{
+        margin-left: 20px;
+        size: 12pt;
+    }
+
+    aside p{
+        margin-left: 20px;
+    }
+
     main{
         width: 70%;
         text-align: center;
@@ -31,11 +44,12 @@ header{
         justify-content: space-between;  
     }
     
-    main>div>.pokemon>img{
-        height: 500px;
+    main>div>.imgfondo{
+        
         background-image: url(img/ruta.jpg);
         background-repeat: no-repeat;
-        background-size: 3000px;
+        background-size: cover;
+        width: 100%;
     }
 
     main>div>.flechaizq{
