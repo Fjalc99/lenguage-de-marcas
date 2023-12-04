@@ -65,7 +65,7 @@ header{
     
     main>div>.imgfondo{
         
-        background-image: url(img/ruta.jpg);
+        background-image: url(../Proyecto1Trimestre/img/ruta.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
