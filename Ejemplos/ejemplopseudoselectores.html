@@ -10,39 +10,39 @@
             color: red;
         }
 
-        
+        /*h1+p{
+            
+        }*/
 
         h1:hover+p {
             display: none;
         }
 
         div {
-            width: 25%;
-            background-color: #000;
-            color: #fff;
-            border: 1px solid #fff;
+            width: 140px;
+            height: 60px;
+            background-image: url(../Carpetas_Ejer_1Trimestre/ejerciciosUD2/img/Real_betis_logo.svg.png);
+            /*transition: all 1s;*/
         }
 
         div:hover {
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #000;
+           background-position: bottom;
         }
 
+        div:target{
+            background-color: red;
+        }
+
+        div:first-child{
+            background-color: yellow;
+        }
         a {
             color: #ff3c3c;
+        
         }
 
         a:visited {
             color: #ff5050;
-        }
-
-        div:first-child {
-            background-color: yellow;
-        }
-
-        div:first-of-type {
-            background-color: green;
         }
 
         nav ul{
@@ -52,13 +52,41 @@
             padding: 0px;
             
         }
+        nav ul{
+            border: 1px solid;
+            
+        }
         nav ul li{
-            background-color: lightgoldenrodyellow;
+            background-color: lightgreen;
             flex: 1 1 auto;
-            padding: 0.5px;
+            padding: 25px 0.5%;
             border-right: 1px solid #ff3c3c;
             text-align: center;
         }
+        nav ul a:last-child{
+            border-right: none;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        nav ul a:first-child{
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px ;
+        }
+        
+        nav ul a, nav ul a:visited{
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        nav ul a:hover{
+            background-color: rgb(0, 2, 0);
+            color: greenyellow;
+        }
+
+
+
+       
     </style>
 </head>
 
@@ -69,11 +97,11 @@
 
     <nav>
         <ul>
-            <li>Inicio</li>
-            <li>Quienes</li>
-            <li>Contacto</li>
-            <li>Qué hacemos</li>
-            <li>Comprar</li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quienes</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Qué hacemos</a></li>
+            <li><a href="#">Comprar</a></li>
         </ul>
 
     </nav>
