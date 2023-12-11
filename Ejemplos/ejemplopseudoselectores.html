@@ -7,15 +7,18 @@
     <title>Document</title>
     <style type="text/css">
         h1 {
-            color: red;
+            color: rgb(252, 0, 231);
+            transition: all 2s;
+            width: 30%;
+            background-color: #50ff50;
         }
 
-        /*h1+p{
-            
-        }*/
-
-        h1:hover+p {
+        h1+p{
             display: none;
+        }
+
+        h1:hover{
+            width: 50%;
         }
 
         div {
@@ -26,67 +29,86 @@
         }
 
         div:hover {
-           background-position: bottom;
+            background-position: bottom;
         }
 
-        div:target{
+        div:target {
             background-color: red;
         }
 
-        div:first-child{
+        div:first-child {
             background-color: yellow;
         }
+
         a {
             color: #ff3c3c;
-        
+
         }
 
         a:visited {
             color: #ff5050;
         }
 
-        nav ul{
+        nav ul {
             list-style-type: none;
             display: flex;
             justify-content: space-between;
             padding: 0px;
-            
+
         }
-        nav ul{
+
+        nav ul {
             border: 1px solid;
-            
+
         }
-        nav ul li{
+
+        nav ul li {
             background-color: lightgreen;
             flex: 1 1 auto;
             padding: 25px 0.5%;
             border-right: 1px solid #ff3c3c;
             text-align: center;
         }
-        nav ul a:last-child{
+
+        nav ul a:last-child {
             border-right: none;
             border-bottom-right-radius: 10px;
             border-top-right-radius: 10px;
         }
 
-        nav ul a:first-child{
+        nav ul a:first-child {
             border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px ;
-        }
-        
-        nav ul a, nav ul a:visited{
-            text-decoration: none;
-            color: deeppink;
+            border-top-left-radius: 10px;
         }
 
-        nav ul a:hover{
-            background-color: rgb(0, 2, 0);
+        nav ul a,
+        nav ul a:visited {
+            text-decoration: none;
+            color: deeppink;
+            transition:5s;
+        }
+
+        nav ul a:hover {
+            background-color: rgb(0, 0, 148);
             color: greenyellow;
         }
 
+        section>#Inicio {
+            display: none;
+            background-color: aquamarine;
+        }
 
+        section:target {
+            display: inherit;
+           
+        }
+        #Inicio>p:hover{
+            display: none;
+        }
 
-       
+        #Quienes>p:hover{
+            display: none;
+        }
     </style>
 </head>
 
@@ -97,141 +119,73 @@
 
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Qué hacemos</a></li>
-            <li><a href="#">Comprar</a></li>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Quienes">Quienes</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Que hacemos">Qué hacemos</a></li>
+            <li><a href="#Comprar">Comprar</a></li>
         </ul>
 
     </nav>
     <a href="#Iralfinal">Ir al final</a>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum accusantium, ea
-        possimus magnam nisi,
-        vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus, debitis
-        similique dolorum optio nam a inventore id impedit.</p>
+    <main>
+        <section id="Inicio">
+            <p id>Pimero Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum
+                accusantium, ea
+                possimus magnam nisi,
+                vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor
+                sit amet
+                consectetur adipisicing elit.
+                Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus,
+                debitis
+                similique dolorum optio nam a inventore id impedit.</p>
+        </section>
+        <section id="Quienes">
+            <p>Quienes ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum
+                accusantium, ea
+                possimus magnam nisi,
+                vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor
+                sit amet
+                consectetur adipisicing elit.
+                Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus,
+                debitis
+                similique dolorum optio nam a inventore id impedit.</p>
+        </section>
+        <section id="Contacto">
+            <p>CONTACTO ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum
+                accusantium, ea
+                possimus magnam nisi,
+                vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor
+                sit amet
+                consectetur adipisicing elit.
+                Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus,
+                debitis
+                similique dolorum optio nam a inventore id impedit.</p>
+        </section>
+        <section id="Que hacemos">
+            <p>QUÉ HACEMOS ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum
+                accusantium, ea
+                possimus magnam nisi,
+                vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor
+                sit amet
+                consectetur adipisicing elit.
+                Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus,
+                debitis
+                similique dolorum optio nam a inventore id impedit.</p>
+        </section>
+        <section id="Comprar">
+            <p>COMPRAR ipsum dolor sit amet consectetur adipisicing elit. Earum ullam sapiente nulla dolorum
+                accusantium, ea
+                possimus magnam nisi,
+                vero dolores cupiditate porro laudantium eius quas, corrupti ut veniam ad? Assumenda. Lorem ipsum dolor
+                sit amet
+                consectetur adipisicing elit.
+                Pariatur architecto officia ab vel vero corrupti possimus excepturi illo fugit sapiente. Temporibus,
+                debitis
+                similique dolorum optio nam a inventore id impedit.</p>
+        </section>
+    </main>
+
 
     <div>
         <p>Pincha aqui</p>
