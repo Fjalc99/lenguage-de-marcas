@@ -8,7 +8,7 @@
 
     <style type="text/css">
         main{
-            perspective: 100px;
+            perspective: 100px; /*Para el 3D*/
         }
         div{
             box-sizing: border-box;
@@ -22,7 +22,7 @@
            transition: transform 2s;
            
           /* backface-visibility: hidden; /* esto hace que se oculte la parte trasera*/
-            transform-style:preserve-3d;
+            transform-style:preserve-3d; /*Para el 3D*/
     
         }
         div:hover{
@@ -31,8 +31,8 @@
             /*transform: translate(350px);*/
             /*transform: rotate(90deg);*/
             /*transform: scale(0.75, 2);*/
-            /*transform:skewY(720deg)*/
-            transform: rotateY(180deg);
+            transform:skewY(720deg)
+            /*transform: rotateY(180deg);*/
 
 
         }
