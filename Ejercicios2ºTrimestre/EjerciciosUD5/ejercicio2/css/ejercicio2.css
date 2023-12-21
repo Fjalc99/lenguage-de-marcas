@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(161, 151, 255);
+}
+
+nav{
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav ul{
+    color: black;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+nav>ul{
+            
+    display: flex;
+    align-items: start;
+   
+}
+nav ul li{
+    background-color: white;
+            flex: 1 1 auto;
+            padding: 10px 0.5%;
+            border-right: 1px solid rgb(24, 22, 22);
+            text-align: center;
+            background-image: url(../../img/fondodoble.png);
+            transition: 1s;
+        }
+
+nav ul li:hover{
+   background-position: bottom;
+}
+
