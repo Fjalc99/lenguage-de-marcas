@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(226, 223, 223);
+    background-color: rgb(167, 166, 166);
 }
 
 nav{
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(77, 76, 76);
+    background-color: rgb(27, 27, 27);
 }
 
 nav ul{
@@ -17,7 +17,7 @@ nav ul{
     padding-left: 0px;
     margin: 0 auto;
     width: 50%;
-    background-color: rgb(77, 76, 76);
+    background-color: rgb(27, 27, 27);
 
 }
 nav ul li{
@@ -34,9 +34,14 @@ nav ul li{
     display: flex;
     flex: 1 1 auto;
     padding: 15px 0%;
-    color: whitesmoke;
+    color: rgb(134, 134, 134);
 }
-
+nav ul li:hover{
+ color: white;
+}
+nav ul li i:hover{
+    color: white;
+}
 
 
 

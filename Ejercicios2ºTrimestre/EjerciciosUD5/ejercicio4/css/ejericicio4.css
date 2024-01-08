@@ -1,0 +1,15 @@
+li{
+    background-image: url(../../img/DashIcons.jpg);
+}
+nav li{
+    width: 250px;
+    height: 250px;
+    background-image: url(../../img/DashIcons.jpg)
+}
+nav li#Inicio{
+    background-position: 150px, 50px ;
+}
+
+nav li#Nuevo:hover{
+    background-position: 200px 50px;
+}
