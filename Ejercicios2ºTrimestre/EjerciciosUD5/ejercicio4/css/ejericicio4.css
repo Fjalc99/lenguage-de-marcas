@@ -1,15 +1,36 @@
-li{
+nav li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
     background-image: url(../../img/DashIcons.jpg);
 }
-nav li{
-    width: 250px;
-    height: 250px;
-    background-image: url(../../img/DashIcons.jpg)
-}
-nav li#Inicio{
-    background-position: 150px, 50px ;
+nav li:hover{
+    background-image: url(../../img/DashIcons-modified.jpg);
+    transition: 0.5s;
 }
 
-nav li#Nuevo:hover{
-    background-position: 200px 50px;
+nav li#Inicio{
+    background-position-x: -115px ;
+}
+
+nav li#Nuevo{
+    background-position-x: -53px ;
+    background-position-y: -55px;
+}
+
+
+nav li#Editar{
+    background-position-x: 7px;
+    background-position-y: -55px ;
+}
+
+
+nav li#Visualizar{
+    background-position-x: -53px;
+    background-position-y: -165px;
+}
+
+nav li#Imagen{
+    background-position-y: -55px;
+    background-position-x: -413px;
 }
