@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+       div{
+        border: 2px solid black;
+        width: 190px;
+        height: 400px;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+       } 
+
+        #delante:hover{
+        transform: rotateY(180deg);   
+        background-color: red;
+        color: white;
+       }
+
+       #detras{
+        background-color: black;
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    
+    
+    <div id="delante">Delante</div>
+    <div id="detras">Detras</div>
+</body>
+</html>

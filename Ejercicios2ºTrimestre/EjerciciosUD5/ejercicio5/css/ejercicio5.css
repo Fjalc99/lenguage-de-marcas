@@ -19,7 +19,7 @@ nav>ul{
     align-items: start;
 }
 
-nav ul li{
+nav ul a{
 color: white;
 flex: 1 1 auto;
 padding: 10px 0.5%;
@@ -38,11 +38,12 @@ nav ul li a{
 }
 
 
-nav ul li:hover{
+nav ul a:hover li{
     background-color: white;
+    color: black;
 }
 
-nav ul li a:hover {
+nav ul a:hover li {
     background-color: white;
     color: rgb(0, 0, 0);
 }
