@@ -1,0 +1,54 @@
+*{
+box-sizing: border-box;
+}
+body{
+background-color: rgb(180, 180, 180);
+}
+nav div ul{
+    list-style: none;
+    display: flex;
+}
+
+nav  ul li{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin: 50px;
+    text-align: center;
+    margin: 0 auto;  
+}
+#izquierda li{
+    padding-top: 25px;
+    padding-left: 5px;
+    background-color: white;
+}
+#derecha li{
+    padding-top: 25px;
+    padding-left: 5px;
+    background-color: white;
+}
+#todo{
+    display: flex;
+    background-color: white;
+}
+
+
+#logo{
+    padding-top: 10px ;
+    width: 75px;
+    background-position: 1px;
+    background-image: url(../../img/free-toyota-202913.png)
+
+
+}
+#logo:hover{
+    background-image: url(../../img/free-toyota-202913.png);
+    width: 258px;
+}
+
+
+
+
+
+
+

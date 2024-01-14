@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(180, 180, 180);
+}
+
+nav{
+    margin: 0 auto;
+}
+
+nav ul{
+    color: white;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+
+nav>ul{
+            
+    display: flex;
+    align-items: start;
+   
+}
+nav ul li{
+    background-color: black;
+            flex: 1 1 auto;
+            padding: 10px 0.5%;
+            border-right: 1px solid rgb(24, 22, 22);
+            text-align: center;
+        }
+
+
+nav ul li:hover{
+    background-color: rgb(190, 63, 63);
+    color: white;
+    transform: scaleY(1.10);
+}

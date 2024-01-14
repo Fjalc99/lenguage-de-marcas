@@ -19,7 +19,7 @@ nav>ul{
     align-items: start;
 }
 
-nav ul a{
+nav ul a li{ 
 color: white;
 flex: 1 1 auto;
 padding: 10px 0.5%;
@@ -32,24 +32,22 @@ border-top-left-radius: 10px;
 text-decoration: none;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
+nav ul a  {
+   text-decoration: none;
+   flex: 1 1 auto;
 }
 
+
+nav ul a:visited li  {
+    text-decoration: none;
+}
 
 nav ul a:hover li{
     background-color: white;
     color: black;
 }
 
-nav ul a:hover li {
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
-nav ul li a:visited{
-    color: rgb(0, 0, 0);
-}
+
 section {
     width: 85%;
     margin: 0 auto;
@@ -62,4 +60,8 @@ p{
 
 section:target {
     display: inherit;
+}
+
+span{
+    font-weight: bolder;
 }
