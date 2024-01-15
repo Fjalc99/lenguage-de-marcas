@@ -19,11 +19,8 @@ nav>ul{
     align-items: start;
 }
 
-<<<<<<< HEAD
-nav ul li{
-=======
+
 nav ul a li{ 
->>>>>>> c4d47e763499fdcfef01dcf9460a4f4384031cfd
 color: white;
 flex: 1 1 auto;
 padding: 10px 0.5%;
@@ -48,24 +45,19 @@ nav ul a:visited li  {
 
 nav ul a:hover li{
     background-color: white;
+    color: black;
 }
 
-<<<<<<< HEAD
-nav ul li a:hover {
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
+
 nav ul li a:visited{
     color: rgb(0, 0, 0);
 }
-=======
 
->>>>>>> c4d47e763499fdcfef01dcf9460a4f4384031cfd
 section {
     width: 85%;
     margin: 0 auto;
     display: none;
-    background-color: rgba(250, 237, 237, 0.952);
+    background-color: rgba(255, 255, 255, 0.952);
 }
 p{
     margin-top: -16px;
