@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+    body{
+        background-attachment:fixed ;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(67, 124, 248)  );        background-repeat: no-repeat;
+    }
 
    nav{
     display: flex;
@@ -8,17 +12,16 @@
     margin: 0 auto;
    }
 
-
-   nav i:hover + ul{
-    visibility: visible;
+   nav> i:hover + ul{
+    transform: translateX(0px);
    }
-
-   nav ul{
+   
+   nav i + ul{
     background-color: lightsalmon;
     color: whitesmoke;
     list-style-type: none;
     flex-direction: column;
-    
+    transform: translateX(-2000px);
     
    }
    
