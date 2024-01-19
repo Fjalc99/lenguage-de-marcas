@@ -9,68 +9,108 @@
         .t1 {
             border: 1px solid black;
             width: 300px;
-            border-collapse: collapse; /*Esto hace que se junten las lineas*/
+            border-collapse: collapse;
+            /*Esto hace que se junten las lineas*/
             margin-bottom: 20px;
         }
-
-        td {
+        
+        td ,th {
             border: 1px solid black;
+        
 
         }
-        .tr1{
+
+        .tr1 {
             background-color: bisque;
             color: blue;
         }
-         .tr2{
-            background-color:lightgreen;
+
+        .tr2 {
+            background-color: lightgreen;
             color: blueviolet;
         }
 
-        .tr3{
-            background-color: lightgreen;
-            color:blueviolet;
-        }
-
-        .tr4{
+        .tr3 {
             background-color: lightgreen;
             color: blueviolet;
-       }
+        }
 
-       .td21{
-        background-color: aquamarine;
-       }
+        .tr4 {
+            background-color: lightgreen;
+            color: blueviolet;
+        }
 
-       .t2{
-        width: 300px;
-        border: 1px solid black;
-        border-collapse: collapse;
-       }
-       .tr5{
-        background-color: lightslategray;
-        color: whitesmoke;
-        
-       }
+        .td21 {
+            background-color: aquamarine;
+        }
 
+        .t2 {
+            width: 300px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
 
+        .tr5 {
+            background-color: lightslategray;
+            color: whitesmoke;
+
+        }
+
+        .tr6{
+            background-color: burlywood;
+            text-align: center;
+        }
+
+        tfoot{
+            background-color: aquamarine;
+        }
+        caption{
+            font-weight: 600;
+        }
+
+        tr:nth-child(odd){
+            background-color: rgb(67, 255, 108);
+        }
+
+        tr:nth-child(even){
+            background-color: lightcoral;
+        }
+        /*Cuando ponemos rowspan para juntar dos celdas en vertical pero 
+        tienes que borrar la celdad de abajo porque se desforma*/
+
+        /*th en vez de td para los titulos*/
+
+        /*Hay que usar las etiquetas semanticas como thead, tbody, tfoot*/
+        /*El summary es como el texto alternativo*/
+        /*caption es el titulo de la tabla */
     </style>
 </head>
 
 <body>
 
     <table class="t1">
-        <tr class="tr1">
-            <td class="td1">Canción</td>
-            <td>Artista</td>
-            <td>Puntuación</td>
-        </tr>
+        <thead>
+            <caption>
+                Lista de  canciones
+            </caption>
+            <tr class="tr6">
+                <th colspan="3">Clasificacion de canciones</th>
+            </tr>
+            <tr class="tr1">
+                <td class="td1">Canción</td>
+                <td>Artista</td>
+                <td>Puntuación</td>
+            </tr>
+        </thead>
+     
         <tr class="tr2">
             <td class="td21">La vereda de la puerta de atrás</td>
-            <td>Extremoduro</td>
+            <td rowspan="2">Extremoduro</td>  
             <td>10</td>
         </tr>
+        
         <tr class="tr3">
             <td>A la luz del lorenzo</td>
-            <td>Los delicuentes </td>
             <td>7</td>
         </tr>
         <tr class="tr4">
@@ -78,6 +118,11 @@
             <td>Bad Bunny</td>
             <td>10</td>
         </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">La Puntuación de las canciones es 27</td>
+            </tr>
+        </tfoot>
     </table>
 
 
@@ -88,7 +133,7 @@
             <td>Puntuación</td>
         </tr>
         <tr>
-            <td >La vereda de la puerta de atrás</td>
+            <td>La vereda de la puerta de atrás</td>
             <td>Extremoduro</td>
             <td>10</td>
         </tr>
@@ -97,7 +142,7 @@
             <td>Los delicuentes </td>
             <td>7</td>
         </tr>
-        <tr >
+        <tr>
             <td>Amorfoda</td>
             <td>Bad Bunny</td>
             <td>10</td>
