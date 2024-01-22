@@ -68,12 +68,16 @@
             font-weight: 600;
         }
 
-        tr:nth-child(odd){
-            background-color: rgb(67, 255, 108);
+       /* td:nth-child(3){
+            background-color: rgb(255, 4, 4);
         }
 
-        tr:nth-child(even){
-            background-color: lightcoral;
+        tr:nth-child(3){
+            background-color: rgb(255, 3, 3);
+        } */
+
+        colgroup + .rojo {
+            background-color: rgb(162, 0, 255);
         }
         /*Cuando ponemos rowspan para juntar dos celdas en vertical pero 
         tienes que borrar la celdad de abajo porque se desforma*/
@@ -127,7 +131,9 @@
 
 
     <table class="t2">
-        <tr class="tr5">
+        <tr>
+            <colgroup span="2"></colgroup>
+            <colgroup class="rojo" span="1"></colgroup>
             <td>Canción</td>
             <td>Artista</td>
             <td>Puntuación</td>

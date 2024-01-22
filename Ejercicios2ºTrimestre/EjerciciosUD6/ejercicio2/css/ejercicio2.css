@@ -1,0 +1,20 @@
+table{
+    border: 1px solid #5c8001;
+    width: 700px;
+    border-collapse:collapse ;
+}
+
+th{
+    border: 1px solid #5c8001;
+    background-color: #7cb518;
+    color: rgb(255, 255, 255);
+}
+
+td{
+    border: 1px solid #5c8001;
+}
+
+tr:nth-child(odd){
+    background-color: #d1f5be;
+}
+
