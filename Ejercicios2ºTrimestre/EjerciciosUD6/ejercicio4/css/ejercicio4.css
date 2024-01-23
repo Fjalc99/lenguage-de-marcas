@@ -1,5 +1,5 @@
 body{
-    background-color:#fdd48d;
+    background-color:#feeafa;
 }
 caption{
     font-weight: 600;
@@ -30,14 +30,14 @@ th{
     color: #B3001B ;
 }
 tr:nth-child(odd){
-    background-color: rgb(250, 237, 221);
+    background-color: #e2d6eb;
 }
 
 td:hover{
 color: black;
-background-color: rgb(157, 255, 255);
+background-color: #a78a7f;
 }
 tr:hover{
-    background-color: rgb(223, 247, 255);
+    background-color: #eed7c5;
     color: black;
 }
