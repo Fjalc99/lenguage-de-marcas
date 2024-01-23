@@ -1,0 +1,43 @@
+body{
+    background-color:#fdd48d;
+}
+caption{
+    font-weight: 600;
+    margin: 10px;
+    border-bottom: 1px rgb(250, 237, 221) solid;
+    text-align: start;
+    
+}   
+
+table{
+    width: 700px;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: 400;
+    background-color: white;
+}
+
+.negrita{
+    font-weight: 600;
+}
+
+.positivo{
+    color: #7DC95E ;
+}
+.negativo{
+    color: #B3001B ;
+}
+tr:nth-child(odd){
+    background-color: rgb(250, 237, 221);
+}
+
+td:hover{
+color: black;
+background-color: rgb(157, 255, 255);
+}
+tr:hover{
+    background-color: rgb(223, 247, 255);
+    color: black;
+}
