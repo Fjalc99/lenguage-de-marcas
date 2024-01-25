@@ -1,0 +1,49 @@
+table{
+    width: 800px;
+    border-collapse: collapse
+}
+
+.totales{
+    
+    border-bottom: 1px solid black;
+}
+
+.equipos{
+    border-bottom: 1px solid black ;
+}
+
+
+
+
+
+
+
+/*<tr class="equipos">
+
+                <th colspan="1"></th>
+                <th colspan="1">EQUIPOS</th>
+                <th></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th colspan="1"></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+            </tr>*/
