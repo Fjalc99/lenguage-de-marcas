@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    *{
+        box-sizing: border-box;
+    }
+form{
+    background-color: rgb(240, 176, 131);
+    border: 2px solid darkgreen;
+    padding: 2px;
+    width: 70%;
+}
+.primerformulario{
+display: flex;
+width: 100%;
+
+}
+label{
+    display: block;
+    width: 33%;
+}
+
+input{
+    display: block;
+    width: 66%;
+}
+
+input:focus{
+    background-color: aquamarine;
+    color: brown;
+    border: 3px solid rgb(0, 0, 0);
+}
+/*Toda eiqueta form tiene que tener minimo name=" " ,method=" ", action= " "*/
+/*El apartado de mehtod y action se deja en blanco hasta el proyecto*/
+/*En la etiqueta input tiene que tener minimo tyoe= "" , name=" ", id=" "*/
+</style>
+<body>
+    
+    <h1>Formulario de registro</h1>
+
+    <form action="" method="" name="registro" autocomplete novalidate enctype="multipart/form-data">
+        <div class="primerformulario">
+            <label for="nombre">Nombre</label> 
+        <input type="text" name="nombre" id="nombre" required placeholder="Su nombre aqui" autofocus autocomplete>
+        </div>
+        
+        
+        
+        <div class="primerformulario">
+            <label for="apellido1">Primer Apellido</label>
+        <input type="text" name="apellido1" id="apellido1">
+        </div>
+    </form>
+
+</body>
+</html>

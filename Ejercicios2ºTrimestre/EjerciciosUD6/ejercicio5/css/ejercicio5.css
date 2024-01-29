@@ -36,6 +36,8 @@ td {
     border-left: 2px solid grey;
 }
 
-tr:nth-child(odd){
+tbody tr:nth-child(odd){
     background-color: rgb(233, 232, 232);
+
 }
+
