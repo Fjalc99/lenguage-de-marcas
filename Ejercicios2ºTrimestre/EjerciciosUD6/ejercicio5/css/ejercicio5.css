@@ -6,7 +6,7 @@ table{
 }
 
 .totales{
-    
+    background-color: white;
     border-bottom: 1px solid black;
 }
 
@@ -14,7 +14,28 @@ table{
     border-bottom: 3px solid rgb(255, 0, 0) ;
 }
 
-tr, td{
 
-    border: 1px solid black;
+
+td {   
+    text-align: center;
+    padding: 5px;
+}
+.champion{
+    border-left: 2px solid rgb(0, 19, 128);
+}
+.uefa{
+    border-left: 2px solid orange;
+}
+.descenso{
+    border-left: 2px solid red ;
+}
+.conference{
+    border-left: 2px solid green ;
+}
+.posicion{
+    border-left: 2px solid grey;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(233, 232, 232);
 }
