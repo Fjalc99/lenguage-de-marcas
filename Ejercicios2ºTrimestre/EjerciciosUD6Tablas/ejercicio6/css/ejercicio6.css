@@ -12,7 +12,7 @@ td,tr{
     font-size: 16pt;
 }
 
-.blanco{
+.a >.blanco{
     background-color: white;
 }
 .a:nth-child(odd){
