@@ -12,14 +12,18 @@ tr, td{
     font-size: 16pt;
 }
 
-tr:nth-child(odd){
+tr:nth-child(even) td:nth-child(even){
     background-color: blanchedalmond;
 }
- tr,td:nth-child(even){
-    background-color: rgb(134, 120, 98);
- }
 
- 
- td:nth-child(even){
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: burlywood;
+}
+
+td:nth-child(even) tr:nth-child(odd){
     background-color: blanchedalmond;
- }
+}
+
+td:nth-child(odd) tr:nth-child(even){
+    background-color: burlywood;
+}
