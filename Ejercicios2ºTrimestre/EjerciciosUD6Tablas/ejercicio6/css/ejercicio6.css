@@ -4,7 +4,7 @@ table{
     border: 1px solid black;
     border-collapse: collapse ;
 }
-td,tr{
+tr, td{
     border: 1px solid black;
     width: 50px;
     height: 50px;
@@ -12,84 +12,14 @@ td,tr{
     font-size: 16pt;
 }
 
-.a >.blanco{
-    background-color: white;
+tr:nth-child(odd){
+    background-color: blanchedalmond;
 }
-.a:nth-child(odd){
- background-color: rgb(255, 135, 79);
-}
+ tr,td:nth-child(even){
+    background-color: rgb(134, 120, 98);
+ }
 
-.a td:nth-child(even){
-    background-color: rgb(255, 209, 110);
-}
-
-.b:nth-child(even){
-    background-color: rgb(255, 135, 79);
-}
-.b td:nth-child(odd){
-    background-color: rgb(255, 209, 110);
-}
-
-.c:nth-child(odd){
- background-color: rgb(255, 135, 79);
-}
-
-.c td:nth-child(even){
-    background-color: rgb(255, 209, 110);
-}
-
-.d:nth-child(even){
- background-color: rgb(255, 135, 79);
-}
-
-.d td:nth-child(odd){
-    background-color: rgb(255, 209, 110);
-}
-
-.e:nth-child(odd){
- background-color: rgb(255, 135, 79);
-}
-
-.e td:nth-child(even){
-    background-color: rgb(255, 209, 110);
-}
-
-.f:nth-child(even){
- background-color: rgb(255, 135, 79);
-}
-
-.f td:nth-child(odd){
-    background-color: rgb(255, 209, 110);
-}
-
-.g:nth-child(odd){
- background-color: rgb(255, 135, 79);
-}
-
-.g td:nth-child(even){
-    background-color: rgb(255, 209, 110);
-}
-
-.h:nth-child(even){
- background-color: rgb(255, 135, 79);
-}
-
-.h td:nth-child(odd){
-    background-color: rgb(255, 209, 110);
-}
-
-.j:nth-child(odd){
- background-color: rgb(255, 135, 79);
-}
-
-.j td:nth-child(even){
-    background-color: rgb(255, 209, 110);
-}
-
-.k:nth-child(even){
- background-color: rgb(255, 135, 79);
-}
-
-.k td:nth-child(odd){
-    background-color: rgb(255, 209, 110);
-}
+ 
+ td:nth-child(even){
+    background-color: blanchedalmond;
+ }
