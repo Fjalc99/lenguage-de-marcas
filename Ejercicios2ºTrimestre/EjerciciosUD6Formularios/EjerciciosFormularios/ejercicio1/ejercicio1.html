@@ -10,11 +10,21 @@
     <form method="" name="Ejercicio1" action="">
         
         <label for="nombre">Nombre</label> 
-        <input type="text"> <br>
+        <input type="text"> <br><br>
         <label for="apellidos">Apellidos</label>
-        <input type="text"> <br>
+        <input type="text"> <br><br>
         <label for="edad">Edad</label>
-        <input type="number">
+        <input type="number"><br><br>
+        <label for="email">Email</label>
+        <input type="email" ><br><br>
+        <label for="navegador">Mi navegador favorito</label>
+        <input type="text" name="navegador" id="navegador" list="opciones"> <br>
+        <datalist id="opciones">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Microsoft edge"></option>
+        </datalist>
+        <input type="submit">
     </form>
 </body>
 </html>
