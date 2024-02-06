@@ -17,13 +17,40 @@ tr:nth-child(even) td:nth-child(even){
 }
 
 tr:nth-child(odd) td:nth-child(odd){
-    background-color: burlywood;
-}
-
-td:nth-child(even) tr:nth-child(odd){
     background-color: blanchedalmond;
 }
 
-td:nth-child(odd) tr:nth-child(even){
+td:nth-child(even), tr:nth-child(odd){
     background-color: burlywood;
+}
+
+td:nth-child(odd), tr:nth-child(even){
+    background-color: burlywood;
+}
+
+
+tr:nth-of-type(1n) td:nth-last-of-type(1){
+    background-color: white;
+}
+
+tr:nth-of-type(1n) td:nth-last-of-type(10){
+    background-color: white;
+}
+
+td:nth-last-of-type(1) tr:nth-of-type(1n){
+    background-color:white ;
+}
+
+tr:nth-child(1) td:nth-child(odd){
+    background-color: white;
+}
+tr:nth-child(10) td:nth-child(even){
+    background-color: white;
+}
+
+tr:nth-child(1) td:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(10) td:nth-child(odd){
+    background-color: white;
 }
