@@ -4,7 +4,9 @@ table{
     border-collapse: collapse
     
 }
-
+tbody{
+    margin: 200px;
+}
 .totales{
     background-color: white;
     border-bottom: 1px solid black;
@@ -19,22 +21,25 @@ table{
 
 td {   
     text-align: center;
-    padding: 5px;
+    padding: 3px;
+    border-bottom: 3px solid white;
+    
 }
 .champion{
-    border-left: 2px solid rgb(0, 19, 128);
+    border-left: 3px solid rgb(0, 19, 128);
+   
 }
 .uefa{
-    border-left: 2px solid orange;
+    border-left: 3px solid orange;
 }
 .descenso{
-    border-left: 2px solid red ;
+    border-left: 3px solid red ;
 }
 .conference{
-    border-left: 2px solid green ;
+    border-left: 3px solid green ;
 }
 .posicion{
-    border-left: 2px solid grey;
+    border-left: 3px solid grey;
 }
 
 tbody tr:nth-child(odd){
@@ -47,7 +52,6 @@ tbody td:nth-child(3){
 }
 
 
-tfoot td{    
+tfoot{    
     text-align: left;
-    padding: 6px;
 }
