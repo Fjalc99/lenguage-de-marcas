@@ -5,21 +5,11 @@ body{
 form{
     background-color: cadetblue;
     width: 70%;
-    padding: 15px;
     border: 2px solid black;
 }
 
-.formulario{
+.flexbox{
     display: flex;
-    width: 100%;
+   
 }
 
-label{
-    display: block;
-    width: 30%;
-}
-
-input{
-    display: block;
-    width: 50%;
-}
