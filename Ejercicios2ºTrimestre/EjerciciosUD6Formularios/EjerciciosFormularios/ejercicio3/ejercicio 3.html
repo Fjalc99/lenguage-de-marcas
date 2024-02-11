@@ -4,12 +4,29 @@
 	<title>Ejercicio 3 - Formulario de alta</title> 
 	<meta charset="utf-8" /> 
 	<style type="text/css"> 
+	fieldset{
+		width: 30%;
+	}
+
+	.asa{
+		display: flex;
+		flex-wrap: wrap;
+		width: 70%;
+	}
+
+	div input{
+		display: block;
+	}
+
+
+
 	</style> 
 </head> 
 <body> 
 <main>
 	<h2>Formulario de alta</h2> 
-	<form method="post" action="#"> 		
+	<form method="post" action="#"> 	
+		<div class="asa">
 		<fieldset> 
 			<label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label> 
 			<div> 
@@ -73,6 +90,7 @@
 			</div> 
 			<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p> 
 		</fieldset> 
+	</div>	
 		<fieldset> 
 			<input id="alta" type="submit" value="Darme de alta &rarr;" /> 
 		</fieldset> 		

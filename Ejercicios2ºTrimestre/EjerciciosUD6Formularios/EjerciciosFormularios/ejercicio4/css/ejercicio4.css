@@ -1,0 +1,28 @@
+form {
+    background-color: #FF9;
+    width: 40%;
+    padding: 10px;
+}
+span{
+    color: red;
+}
+
+label:first-child {
+    font-weight: 600;
+}
+
+fieldset {
+    border: none;
+    background-color: #FF9;
+
+}
+
+input{
+    border: inset;
+}
+
+input:focus {
+    border: 3px solid #E6B700;
+    outline: none;
+}
+
