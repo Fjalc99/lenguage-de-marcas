@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 5</title>
-    <link rel="stylesheet" href="./css/ejercicio5.css">
-</head>
-<body>
-    <h2>Formulario de alta</h2>
-    <form action="" name="ejercicio5">
-        <fieldset>
-            <div class="titulo">
-                <label for="nombreyapellido">Nombre y apellidos <span>*</span></label>
-            </div>
-            <div class="info">
-                <input type="text"> <br>
-            <label for="nombre">Nombre</label> <br>
-
-            <input type="text" name="" id=""><br>
-            <label for="apellido1">Primer apellido</label><br>
-
-            <input type="text"><br>
-            <label for="apellido2">Segundo apellido</label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div class="titulo">
-                <label for="direccion">Dirección <span>*</span></label>
-            </div>
-            <div class="info">
-                <input type="text"><br>
-                <label for="calle">Calle, número, piso, puerta</label><br>    
-
-                <div class="div1">
-                    <input type="text"><br>
-                    <label for="cp">Codigo postal</label><br>
-
-                    <input type="text"><br>
-                    <label for="provincia">Provincia</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 5</title>
+        <link rel="stylesheet" href="./css/ejercicio5.css">
+    </head>
+    <body>
+        <h2>Formulario de alta</h2>
+        <form action name="ejercicio5">
+            <fieldset>
+                <div class="titulo">
+                    <label for="nombreyapellido">Nombre y apellidos
+                        <span>*</span></label>
                 </div>
-                
-                <div class="div2">
+                <div class="info">
                     <input type="text"><br>
-                    <label for="cp">Codigo postal</label><br>
+                    <label for="nombre">Nombre</label><br>
+
+                    <input type="text" name id><br>
+                    <label for="apellido1">Primer apellido</label><br>
 
                     <input type="text"><br>
-                    <label for="provincia">Provincia</label>
+                    <label for="apellido2">Segundo apellido</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="titulo">
+                    <label for="direccion">Dirección <span>*</span></label>
+                </div>
+                <div class="info">
+                    <input type="text"><br>
+                    <label for="calle">Calle, número, piso, puerta</label><br>
+
+                    <div class="div1">
+                        <input type="text"><br>
+                        <label for="cp">Codigo postal</label><br>
+
+                        <input type="text"><br>
+                        <label for="provincia">Provincia</label>
+                    </div>
+
+                    <div class="div2">
+                        <input type="text"><br>
+                        <label for="cp">Codigo postal</label><br>
+
+                        <input type="text"><br>
+                        <label for="provincia">Provincia</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset class="email">
+                <label for="email">Email</label>
+                <input type="email">
+            </fieldset>
+
+            <fieldset>
+                <label for="telefono">Telefono<span>*</span></label>
+                <div>
+                    <div>
+                        <input type="number"><br>
+                        <label for="Fijo">Fijo</label>
+                    </div>
+
+                    <input type="number"><br>
+                    <label for="movil">Móvil</label>
                 </div>
 
+            </fieldset>
 
-            </div>
-        </fieldset>
+            <fieldset class="enviar">
+                <input type="submit" value="Enviar">
+            </fieldset>
 
+        </form>
 
-
-
-    </form>
-
-
-
-</body>
+    </body>
 </html>

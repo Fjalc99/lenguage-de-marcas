@@ -1,27 +1,15 @@
-form{
-    width: 80%;
-    display: flex;
-    border: none;
-}
-fieldset{
-   flex: 1 1 auto;
-   flex-direction: column;
-}
 span{
     color: red;
 }
-.titulo{
-    text-align: left;
-    transform: translateY(20px);
-}
-fieldset .info{
-    text-align: left;
-    width: 600px; 
-    transform: translateX(160px);
+fieldset{
+    display: flex;
+    width: 30%;
 }
 
-.div2{
-    display: block;
-   margin-left: 200px ;
-   margin-top: -78px;
+
+
+.enviar{
+    text-align: right;
 }
+
+
