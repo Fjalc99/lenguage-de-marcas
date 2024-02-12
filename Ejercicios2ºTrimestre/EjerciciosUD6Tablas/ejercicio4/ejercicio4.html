@@ -3,130 +3,652 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4</title>
+    <title>Ejercicio 5</title>
     <link rel="stylesheet" href="./css/ejercicio4.css">
+
+    
 </head>
 <body>
     <table>
         <thead>
-            <caption>
-                Índices
-            </caption>
-            <tr>
-                <th>Índice</th>
-                <th>Último</th>
-                <th>Var. %</th>
-                <th>Var.</th>
-                <th>Máx</th>
-                <th>Mín</th>
-                <th>Volumen</th>
-                <th>Capital</th>
-                <th>Hora</th>
+            <tr class="totales">
+                
+                <th colspan="4"></th>
+                <th colspan="8">Totales</th>
+                <th colspan="8">En casa</th>
+                <th colspan="8">Fuera</th>
+            </tr>
+            <tr class="equipos">
+                <th></th>
+                <th></th>
+                <th>EQUIPOS</th>
+                <th></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th></th>
+                <th>PT</th>
+                <th>PJ</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="negrita">IBEX35</td>
-                <td>9.266,6</td>
-                <td class="positivo">+0,43</td>
-                <td class="positivo">+39,30</td>
-                <td>9.286,2</td>
-                <td>9.260,2</td>
+                <td class="champion">1</td>
+                <td><img src="../img/bet.png" width="25px" alt=""></td>
+                <td>Betis</td>
                 <td></td>
-                <td>604.741</td>
-                <td>09:19</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">FTSE 100</td>
-                <td>7.885,17</td>
-                <td class="positivo">+0,26</td>
-                <td class="positivo">+20,46</td>
-                <td>7.934,3</td>
-                <td>7.864,6</td>
+                <td class="champion">2</td>
+                <td><img src="../img/atm.png" width="25px"></td>
+                <td>Atlético</td>
                 <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
                 <td></td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">DAX 30</td>
-                <td>15.586,73</td>
-                <td class="positivo">+1,13</td>
-                <td class="positivo">+174,68</td>
-                <td>15.611,59</td>
-                <td>15.554,5</td>
+                <td class="champion">3</td>
+                <td><img src="../img/cad.png" width="25px" alt=""></td>
+                <td>Cadiz</td>
                 <td></td>
-                <td>1.295.163</td>
-                <td>09:17</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">CAC 40</td>
-                <td>7.119,83</td>
-                <td class="negativo">-0,18</td>
-                <td class="negativo">-12,52</td>
-                <td>7.190,86</td>
-                <td>7.119,83</td>
+                <td class="champion">4</td>
+                <td><img src="../img/lpa.png" width="25px" alt=""></td>
+                <td>Athletic</td>
                 <td></td>
-                <td>2.322.652</td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">FTSE MIB</td>
-                <td>27.160,73</td>
-                <td class="positivo">+0,15</td>
-                <td class="positivo">+41,99</td>
-                <td>27.377,01</td>
-                <td>27.160,73</td>
+                <td class="uefa">5</td>
+                <td><img src="../img/rma.png" width="25px" alt=""></td>
+                <td>R. Madrid</td>
                 <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
                 <td></td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">EURO STOXX 50</td>
-                <td>4.252,24</td>
-                <td class="positivo">+1,02</td>
-                <td class="positivo">+43,09</td>
-                <td>4.255,66</td>
-                <td>4.226,85</td>
+                <td class="conference">6</td>
+                <td><img src="../img/gir.png" width="25px" alt=""></td>
+                <td>Girona</td>
                 <td></td>
-                <td>4.476.431</td>
-                <td>09:17</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">DOW JONES 30</td>
-                <td>33.949,01</td>
-                <td>-0,61</td>
-                <td>-207,68</td>
-                <td>34.161,65</td>
-                <td>33.899,79</td>
-                <td>324.091.488</td>
+                <td class="posicion">7</td>
+                <td><img src="../img/gra.png" width="25px" alt=""></td>
+                <td>Granada</td>
                 <td></td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">S&P 500</td>
-                <td>4.117,86</td>
-                <td class="negativo">-1,11</td>
-                <td class="negativo">-46,14</td>
-                <td>4.156,85</td>
-                <td>4.111,67</td>
-                <td>2.543.426.560</td>
+                <td class="posicion">8</td>
+                <td><img src="../img/alm.png" width="25px" alt=""></td>
+                <td>Almería</td>
                 <td></td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
             <tr>
-                <td class="negrita">NASDAQ</td>
-                <td>11.910,52</td>
-                <td class="negativo">-1.68</td>
-                <td class="negativo">-203,27</td>
-                <td>12.096,39</td>
-                <td>11.890,09</td>
+                <td class="posicion">9</td>
+                <td><img src="../img/ala.png" width="25px" alt=""></td>
+                <td>Alaves</td>
                 <td></td>
-                <td>13.354.548</td>
-                <td>08/02</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">10</td>
+                <td><img src="../img/cel.png" width="25px" alt=""></td>
+                <td>Celta</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">11</td>
+                <td><img src="../img/mll.png" width="25px" alt=""></td>
+                <td>Mallorca</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">12</td>
+                <td><img src="../img/osa.png" width="25px" alt=""></td>
+                <td>Osasuna</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">13</td>
+                <td><img src="../img/rso.png" width="25px" alt=""></td>
+                <td>R. Sociedad</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">14</td>
+                <td><img src="../img/rva.png" width="25px" alt=""></td>
+                <td>Rayo Vallecano</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">15</td>
+                <td><img src="../img/val.png" width="25px" alt=""></td>
+                <td>Valencia</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">16</td>
+                <td><img src="../img/vil.png" width="25px" alt=""></td>
+                <td>Villareal</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="posicion">17</td>
+                <td><img src="../img/get.png" width="25px" alt=""></td>
+                <td>Getafe</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="descenso">18</td>
+                <td><img src="../img/ath.png" width="25px" alt=""></td>
+                <td>Athletic</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="descenso">19</td>
+                <td><img src="../img/sfc.png" width="25px" alt=""></td>
+                <td>Sevilla</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td class="descenso">20</td>
+                <td><img src="../img/fcb.png" width="25px"></td>
+                <td>Barcelona</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
             </tr>
         </tbody>
-    </table>
- 
+        <tfoot>
+            <tr>
+                <td colspan="2" class="champion">Champions League</td>
+                <td colspan="3" class="uefa">Europa League</td>
+                <td colspan="5" class="conference">Conference League</td>
+                <td colspan="5" class="descenso">Descenso</td>
+                <td colspan="5">PT:Puntos Totales</td>
 
+            </tr>
+            <tr>
+                <td colspan="3">PE:Partidos Empatados</td>
+                <td colspan="5">PP:Partidos Perdidos</td>
+                <td colspan="5">GF:Goles a favor</td>
+                <td colspan="5">GC:Goles en contra</td>
+                <td colspan="5">PG:Partidos Ganados</td>
+                <td colspan="5">PJ:Partidos Jugados</td>
+                
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>

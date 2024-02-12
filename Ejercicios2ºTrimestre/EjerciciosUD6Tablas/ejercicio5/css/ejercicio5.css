@@ -1,57 +1,59 @@
 table{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 900px;
-    border-collapse: collapse
-    
+    width: 500px;
+    height: 400px;
+    border: 1px solid black;
+    border-collapse: collapse ;
 }
-tbody{
-    margin: 200px;
-}
-.totales{
-    background-color: white;
-    border-bottom: 1px solid black;
-    
-}
-
-.equipos{
-    border-bottom: 3px solid red ;
-}
-
-
-
-td {   
+tr, td{
+    width: 50px;
+    height: 50px;
     text-align: center;
-    padding: 3px;
-    border-bottom: 3px solid white;
-    
-}
-.champion{
-    border-left: 3px solid rgb(0, 19, 128);
-   
-}
-.uefa{
-    border-left: 3px solid orange;
-}
-.descenso{
-    border-left: 3px solid red ;
-}
-.conference{
-    border-left: 3px solid green ;
-}
-.posicion{
-    border-left: 3px solid grey;
+    font-size: 18pt;
 }
 
-tbody tr:nth-child(odd){
-    background-color: rgb(233, 232, 232);
-
+tr:nth-child(even) td:nth-child(even){
+    background-color: blanchedalmond;
 }
 
-tbody td:nth-child(3){
-    text-align: left;
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: blanchedalmond;
+}
+
+td:nth-child(even), tr:nth-child(odd){
+    background-color: burlywood;
+}
+
+td:nth-child(odd), tr:nth-child(even){
+    background-color: burlywood;
 }
 
 
-tfoot{    
-    text-align: left;
+tr:nth-of-type(1n) td:nth-last-of-type(1){
+    background-color: white;
+}
+
+tr:nth-of-type(1n) td:nth-last-of-type(10){
+    background-color: white;
+}
+
+td:nth-last-of-type(1) tr:nth-of-type(1n){
+    background-color:white ;
+}
+
+tr:nth-child(1) td:nth-child(odd){
+    background-color: white;
+}
+tr:nth-child(10) td:nth-child(even){
+    background-color: white;
+}
+
+tr:nth-child(1) td:nth-child(even){
+    background-color: white;
+}
+tr:nth-child(10) td:nth-child(odd){
+    background-color: white;
+}
+
+span{
+    font-size: 26pt;
 }

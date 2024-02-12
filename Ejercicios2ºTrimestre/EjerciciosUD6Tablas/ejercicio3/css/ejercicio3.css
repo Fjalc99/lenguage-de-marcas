@@ -1,0 +1,49 @@
+body{
+    background-color:#feeafa;
+}
+caption{
+    font-weight: 600;
+    margin: 10px;
+    border-bottom: 1px rgb(206, 206, 206) solid;
+    text-align: start;
+    
+}   
+
+table{
+    width: 700px;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: 400;
+    background-color: white;
+}
+
+.negrita{
+    font-weight: 600;
+}
+
+.positivo{
+    color: #7DC95E ;
+}
+.negativo{
+    color: #B3001B ;
+}
+tr:nth-child(odd){
+    background-color: #e2d6eb;
+}
+
+td:hover{
+color: black;
+background-color: #a78a7f;
+}
+tr:hover{
+    background-color: #eed7c5;
+    color: black;
+}
+.negativo:hover{
+    color: #B3001B;
+}
+.positivo:hover{
+    color: #7DC95E ;
+}
