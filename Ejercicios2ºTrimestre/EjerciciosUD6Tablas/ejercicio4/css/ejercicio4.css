@@ -1,49 +1,57 @@
-body{
-    background-color:#feeafa;
-}
-caption{
-    font-weight: 600;
-    margin: 10px;
-    border-bottom: 1px rgb(206, 206, 206) solid;
-    text-align: start;
-    
-}   
-
 table{
-    width: 700px;
-    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 900px;
+    border-collapse: collapse
+    
 }
-
-th{
-    font-weight: 400;
+tbody{
+    margin: 200px;
+}
+.totales{
     background-color: white;
+    border-bottom: 1px solid black;
+    
 }
 
-.negrita{
-    font-weight: 600;
+.equipos{
+    border-bottom: 3px solid red ;
 }
 
-.positivo{
-    color: #7DC95E ;
+
+
+td {   
+    text-align: center;
+    padding: 3px;
+    border-bottom: 3px solid white;
+    
 }
-.negativo{
-    color: #B3001B ;
+.champion{
+    border-left: 3px solid rgb(0, 19, 128);
+   
 }
-tr:nth-child(odd){
-    background-color: #e2d6eb;
+.uefa{
+    border-left: 3px solid orange;
+}
+.descenso{
+    border-left: 3px solid red ;
+}
+.conference{
+    border-left: 3px solid green ;
+}
+.posicion{
+    border-left: 3px solid grey;
 }
 
-td:hover{
-color: black;
-background-color: #a78a7f;
+tbody tr:nth-child(odd){
+    background-color: rgb(233, 232, 232);
+
 }
-tr:hover{
-    background-color: #eed7c5;
-    color: black;
+
+tbody td:nth-child(3){
+    text-align: left;
 }
-.negativo:hover{
-    color: #B3001B;
-}
-.positivo:hover{
-    color: #7DC95E ;
+
+
+tfoot{    
+    text-align: left;
 }
