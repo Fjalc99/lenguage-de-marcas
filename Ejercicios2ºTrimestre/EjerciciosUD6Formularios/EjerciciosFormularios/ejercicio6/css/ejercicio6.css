@@ -6,7 +6,14 @@ fieldset{
     width: 80%;
     border: none;
 }
+fieldset:hover{
+    background-color: #FF9;
+}
 
+input:focus{
+    border: 2px solid #E6B700;
+    outline: none;
+}
 .titulo{
     display: flex;
     width: 12%;
@@ -30,7 +37,3 @@ fieldset{
 .enviar input{
     margin-left: 550px;
 }
-
-
-
-
