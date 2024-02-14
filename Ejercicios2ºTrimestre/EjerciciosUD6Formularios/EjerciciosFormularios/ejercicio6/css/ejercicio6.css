@@ -3,7 +3,7 @@ span{
 }
 fieldset{
     display: flex;
-    width: 80%;
+    width: 60%;
     border: none;
 }
 fieldset:hover{
@@ -36,4 +36,14 @@ input:focus{
 
 .enviar input{
     margin-left: 550px;
+}
+
+p{
+
+  margin-left: 10px;
+  color: white;
+}
+
+fieldset:hover p{
+    color: black;
 }
