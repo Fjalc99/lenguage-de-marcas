@@ -8,64 +8,84 @@
 		width: 30%;
 	}
 
-	.asa{
+	.todo{
 		display: flex;
 		flex-wrap: wrap;
-		width: 50%;
+		width: 60%;
 	}
 
-	div input{
-		display: block;
+	.info{
+		width: 30%;
+		display: flex;
+		flex-wrap: wrap;
 	}
+
+	.info2{
+		display: flex;
+		width: 30%;
+		flex-wrap: wrap;
+	}
+	.doscolumnas{
+    display: flex;
+    justify-content: space-between;
+	}
+
+	.doscolumnas > div {
+    width: 50%;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
 	</style> 
 </head> 
 <body> 
 <main>
 	<h2>Formulario de alta</h2> 
 	<form method="post" action="#"> 	
-		<div class="asa">
-		<fieldset> 
+		<div class="todo">
+		<fieldset class="info"> 
 			<label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label> 
 			<div> 
-				<input id="nombre" name="nombre" value="" /> 
-				<label for="nombre">Nombre</label> 		
+				<input id="nombre" name="nombre" value="" /> <br>
+				<label for="nombre">Nombre</label> <br>		
 			
-				<input id="apellido1" name="apellido1" value="" /> 
-				<label for="apellido1">Primer apellido</label> 
+				<input id="apellido1" name="apellido1" value="" /> <br>
+				<label for="apellido1">Primer apellido</label> <br>
 			
-				<input id="apellido2" name="apellido2" value="" /> 
+				<input id="apellido2" name="apellido2" value="" /> <br>
 				<label for="apellido2">Segundo apellido</label> 
 				
 			</div> 
 			<p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
 		</fieldset> 
-		<fieldset> 
+		<fieldset class="info2"> 
 			<label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label> 
 			<div> 				
-				<input id="direccion" name="direccion" value="" /> 
-				<label for="direccion">Calle, número, piso, puerta</label> 
+				<input id="direccion" name="direccion" value="" /><br> 
+				<label for="direccion">Calle, número, piso, puerta</label> <br>
 			
-				<input id="codigopostal" name="codigopostal" value="" /> 
-				<label for="codigopostal">Código postal</label> 
+				<input id="codigopostal" name="codigopostal" value="" /> <br>
+				<label for="codigopostal">Código postal</label> <br>
 			
-				<input id="municipio" name="municipio" value="" /> 
-				<label for="municipio">Municipio</label> 
-			
-				<select id="provincia" name="provincia"> 
-					<option value=""></option> 
-					<option value="provincia1">Provincia 1</option> 
-					<option value="provincia2">Provincia 2</option> 
-					<option value="provincia3">Provincia 3</option> 
-				</select> 
-				<label for="provincia">Provincia</label> 
-			
-				<select id="pais" name="pais"> 
-					<option value=""></option> 
-					<option value="pais1">País 1</option> 
-					<option value="pais2">País 2</option> 
-					<option value="pais3">País 3</option> 
-				</select> 
-				<label for="pais">País</label> 			
+				<input id="municipio" name="municipio" value="" /> <br>
+				<label for="municipio">Municipio</label> <br>
+				<div>
+					<select id="provincia" name="provincia"> <br>
+						<option value=""></option> 
+						<option value="provincia1">Provincia 1</option> 
+						<option value="provincia2">Provincia 2</option> 
+						<option value="provincia3">Provincia 3</option> 
+					</select> 
+					<label for="provincia">Provincia</label> <br>
+				
+					<select id="pais" name="pais"> <br>
+						<option value=""></option> 
+						<option value="pais1">País 1</option> 
+						<option value="pais2">País 2</option> 
+						<option value="pais3">País 3</option> 
+					</select> 
+					<label for="pais">País</label> 	<br>
+				</div>
+						
 			</div> 
 			<p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p> 
 		</fieldset> 
@@ -78,11 +98,11 @@
 		</fieldset> 
 		<fieldset> 
 			<label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label> 
-			<div> 				
-				<input id="telefonofijo" name="telefonofijo" value="" /> 
+			<div class="info2"> 				
+				<input id="telefonofijo" name="telefonofijo" value="" /> <br>
 				<label for="telefonofijo">Fijo</label> 
 			
-				<input id="telefonomovil" name="telefonomovil" value="" /> 
+				<input id="telefonomovil" name="telefonomovil" value="" /><br> 
 				<label for="telefonomovil">Móvil</label> 			
 			</div> 
 			<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p> 
