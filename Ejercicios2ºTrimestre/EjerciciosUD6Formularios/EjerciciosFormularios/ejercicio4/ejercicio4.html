@@ -8,27 +8,94 @@
     </head>
     <body>
         <h2>Formulario de alta</h2>
-        <form name="ejercicio4" method="" action="">
+        <form action name="ejercicio6">
             <fieldset>
-                <label for="titulo">Nombre y apellidos <span>*</span></label><br><br>
+                <div class="titulo">
+                    <label for="nombreyapellido">Nombre y apellidos
+                        <span>*</span></label>
+                </div>
+                <div class="info1">
+                    <input type="text"><br>
+                    <label for="nombre">Nombre</label><br>
 
-                <input type="text" value><br>
-                <label for="nombre">Nombre</label><br>
+                    <input type="text" name id><br>
+                    <label for="apellido1">Primer apellido</label><br>
 
-                <input type="text"> <br>
-                <label for="apellido1">Primer apellido</label>
-                <br>
-
-                <input type="text"><br>
-                <label for="apellido2">Segundo apellido</label>
-                <br><br>
-
-                
+                    <input type="text"><br>
+                    <label for="apellido2">Segundo apellido</label>
+                </div>
+                <p class="ayuda">No te olvides de escribir también tu segundo
+                    apellido</p>
             </fieldset>
-            <div class="enviar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
 
-    </body>
-</html>
+            <fieldset>
+                <div class="titulo">
+                    <label for="direccion">Dirección <span>*</span></label>
+                </div>
+                <div class="doscolumnas">
+
+                    <div>
+                        <input type="text"><br>
+                        <label for="calle">Calle, número, piso,
+                            puerta</label><br><br>
+                        <input type="text"><br>
+                        <label for="cp">Codigo postal</label><br><br>
+                        <select name="provincias" id="provincias">
+                            <option value="provincia1">Provincia 1</option>
+                            <option value="provincia2">Provincia 2</option>
+                            <option value="provincia3">Provincia 3</option>
+                        </select><br>
+                        <label for="provincia">Provincia</label><br>
+                    </div>
+
+                    <div class="div2">
+                        <input type="text"><br>
+                        <label for="municipio">Municipio</label><br><br>
+
+                        <select name="paises" id="paises">
+                            <option value="pais1">País 1</option>
+                            <option value="pais2">País 2</option>
+                            <option value="pais3">País 3</option>
+                        </select><br>
+                        <label for="pais">País</label>
+                    </div>
+                </div>
+                <p class="ayuda">El código postal es imprescindible para poder
+                    recibir los pedidos</p>
+            </fieldset>
+
+            <fieldset class="email">
+                <div class="titulo">
+                    <label for="email">Email</label>
+                </div>
+
+                <input type="email"><br>
+                <p class="ayuda">Asegúrate de que sea váfieldsetdo</p>
+            </fieldset>
+
+            <fieldset>
+                <div class="titulo">
+                    <label for="telefono">Telefono<span>*</span></label>
+                </div>
+
+                <div class="doscolumnas">
+                    <div>
+                        <input type="number"><br>
+                        <label for="Fijo">Fijo</label>
+                    </div>
+                    <div>
+                        <input type="number"><br>
+                        <label for="movil">Móvil</label>
+                    </div>
+                </div>
+                <p class="ayuda">Sin prefijo de país y sin espacios en
+                    blanco</p>
+
+            </fieldset>
+
+            <fieldset class="enviar">
+                <input type="submit" value="Darme de alta">
+            </fieldset>
+
+        </body>
+    </html>

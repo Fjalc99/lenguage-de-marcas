@@ -1,25 +1,25 @@
-body{
+body {
     background-color: bisque;
 }
 
-form{
+form {
     background-color: cadetblue;
     width: 70%;
     padding: 15px;
     border: 2px solid black;
 }
 
-.formulario{
+.formulario {
     display: flex;
     width: 100%;
 }
 
-label{
+label {
     display: block;
     width: 30%;
 }
 
-input{
+input {
     display: block;
     width: 50%;
 }

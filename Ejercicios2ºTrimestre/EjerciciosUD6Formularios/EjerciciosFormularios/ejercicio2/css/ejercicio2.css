@@ -1,15 +1,14 @@
-body{
+body {
     background-color: bisque;
 }
 
-form{
+form {
     background-color: cadetblue;
     width: 70%;
     border: 2px solid black;
 }
 
-.flexbox{
+.flexbox {
     display: flex;
-   
-}
 
+}

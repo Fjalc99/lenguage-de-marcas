@@ -1,28 +1,54 @@
-form {
-    background-color: #FF9;
-    width: 40%;
-    padding: 10px;
-}
-span{
+span {
     color: red;
 }
 
-label:first-child {
-    font-weight: 600;
-}
-
 fieldset {
+    display: flex;
+    width: 60%;
     border: none;
-    background-color: #FF9;
-
 }
 
-input{
-    border: inset;
+fieldset:hover {
+    background-color: #FF9;
 }
 
 input:focus {
-    border: 3px solid #E6B700;
+    border: 2px solid #E6B700;
     outline: none;
 }
 
+.titulo {
+    display: flex;
+    width: 12%;
+}
+
+.doscolumnas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.doscolumnas .div2 {
+    margin-top: 57px;
+
+}
+
+.doscolumnas>div {
+    width: 50%;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.enviar input {
+    margin-left: 550px;
+}
+
+p {
+
+    margin-left: 10px;
+    color: white;
+}
+
+fieldset:hover p {
+    color: #FF9;
+}

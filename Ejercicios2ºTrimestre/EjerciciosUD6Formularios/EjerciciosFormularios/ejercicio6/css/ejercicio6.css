@@ -1,49 +1,54 @@
-span{
+span {
     color: red;
 }
-fieldset{
+
+fieldset {
     display: flex;
     width: 60%;
     border: none;
 }
-fieldset:hover{
+
+fieldset:hover {
     background-color: #FF9;
 }
 
-input:focus{
+input:focus {
     border: 2px solid #E6B700;
     outline: none;
 }
-.titulo{
+
+.titulo {
     display: flex;
     width: 12%;
 }
 
-.doscolumnas{
+.doscolumnas {
     display: flex;
     justify-content: space-between;
 
 }
-.doscolumnas .div2{
+
+.doscolumnas .div2 {
     margin-top: 57px;
 
 }
-.doscolumnas > div {
+
+.doscolumnas>div {
     width: 50%;
     margin-right: 30px;
     margin-bottom: 10px;
 }
 
-.enviar input{
+.enviar input {
     margin-left: 550px;
 }
 
-p{
+p {
 
-  margin-left: 10px;
-  color: white;
+    margin-left: 10px;
+    color: white;
 }
 
-fieldset:hover p{
+fieldset:hover p {
     color: black;
 }

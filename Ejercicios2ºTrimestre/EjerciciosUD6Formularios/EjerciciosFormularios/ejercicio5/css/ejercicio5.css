@@ -1,36 +1,35 @@
-span{
+span {
     color: red;
 }
-fieldset{
+
+fieldset {
     display: flex;
     width: 80%;
     border: none;
 }
 
-.titulo{
+.titulo {
     display: flex;
     width: 12%;
 }
 
-.doscolumnas{
+.doscolumnas {
     display: flex;
     justify-content: space-between;
 
 }
-.doscolumnas .div2{
+
+.doscolumnas .div2 {
     margin-top: 57px;
 
 }
-.doscolumnas > div {
+
+.doscolumnas>div {
     width: 50%;
     margin-right: 30px;
     margin-bottom: 10px;
 }
 
-.enviar input{
+.enviar input {
     margin-left: 550px;
 }
-
-
-
-

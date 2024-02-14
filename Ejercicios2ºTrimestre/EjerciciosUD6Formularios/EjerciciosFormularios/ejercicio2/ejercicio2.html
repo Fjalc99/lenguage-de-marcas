@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicicio 2</title>
-    <link rel="stylesheet" href="./css/ejercicio2.css">
-</head>
-<body>
-    <form method="" name="Ejercicio2" action="">
-        <div class="formularoi">
-            <label for="nombre">Nombre</label> 
-            <input type="text"> <br><br>
-            <label for="apellidos">Apellidos</label>
-            <input type="text"> <br><br>
-            <label for="email">Email</label>
-            <input type="email" ><br><br>
-            <label for="nombreUsuario">Nombre de usuario</label>
-            <input type="text" name="nombreUsuario" id="nombreUsuario"> <br><br>
-            <label for="contraseña">Contraseña</label>
-            <input type="password"> <br><br>
-            <label for="repetirContraseña">Repetir contraseña</label>
-            <input type="password"> <br><br>
-            <div class="sexo">
-                <label for="sexo">Sexo</label> <br>
-                <input type="radio" name="sexo" value="M">Masculino <br>
-                <input type="radio" name="sexo" value="F">Femenino <br>
-                <input type="radio" name="sexo" value="">Otro
-            </div>
-            <label for="fecha">Fecha</label>
-            <input type="date"> <br>
-            <label for="aficione">Aficiones</label>
-            <div class="flexbox">
-                <div>
-                    <input type="checkbox" name="futbol" value="futbol"><label for="futbol">Futbol</label><br>
-                    <input type="checkbox" name="musica" value="musica"><label for="musica">Música</label><br>
-                    <input type="checkbox" name="juegos" value="juegos"><label for="juegos">juegos</label><br>
-                    <input type="checkbox" name="baloncesto" value="baloncesto"><label for="baloncesto">baloncesto</label><br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicicio 2</title>
+        <link rel="stylesheet" href="./css/ejercicio2.css">
+    </head>
+    <body>
+        <form method name="Ejercicio2" action>
+            <div class="formularoi">
+                <label for="nombre">Nombre</label>
+                <input type="text"> <br><br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text"> <br><br>
+                <label for="email">Email</label>
+                <input type="email"><br><br>
+                <label for="nombreUsuario">Nombre de usuario</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario">
+                <br><br>
+                <label for="contraseña">Contraseña</label>
+                <input type="password"> <br><br>
+                <label for="repetirContraseña">Repetir contraseña</label>
+                <input type="password"> <br><br>
+                <div class="sexo">
+                    <label for="sexo">Sexo</label> <br>
+                    <input type="radio" name="sexo" value="M">Masculino <br>
+                    <input type="radio" name="sexo" value="F">Femenino <br>
+                    <input type="radio" name="sexo" value>Otro
                 </div>
-                <div>
-                    <input type="checkbox" name="tenis" value="tenis"><label for="tenis">Tenis</label><br>
-                    <input type="checkbox" name="comer" value="comer"><label for="comer">Comer</label><br>
-                    <input type="checkbox" name="bicicleta" value="bicicleta"><label for="bicicleta">Bicicleta</label><br>
-                    <input type="checkbox" name="guitarra" value="guitarra"><label for="guitarra">Guitarra</label><br>
+                <label for="fecha">Fecha</label>
+                <input type="date"> <br>
+                <label for="aficione">Aficiones</label>
+                <div class="flexbox">
+                    <div>
+                        <input type="checkbox" name="futbol"
+                            value="futbol"><label
+                            for="futbol">Futbol</label><br>
+                        <input type="checkbox" name="musica"
+                            value="musica"><label
+                            for="musica">Música</label><br>
+                        <input type="checkbox" name="juegos"
+                            value="juegos"><label
+                            for="juegos">juegos</label><br>
+                        <input type="checkbox" name="baloncesto"
+                            value="baloncesto"><label
+                            for="baloncesto">baloncesto</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tenis" value="tenis"><label
+                            for="tenis">Tenis</label><br>
+                        <input type="checkbox" name="comer" value="comer"><label
+                            for="comer">Comer</label><br>
+                        <input type="checkbox" name="bicicleta"
+                            value="bicicleta"><label
+                            for="bicicleta">Bicicleta</label><br>
+                        <input type="checkbox" name="guitarra"
+                            value="guitarra"><label
+                            for="guitarra">Guitarra</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="ajedrez"
+                            value="ajedrez"><label
+                            for="ajedrez">Ajedrez</label><br>
+                        <input type="checkbox" name="hockey"
+                            value="hockey"><label
+                            for="hockey">Hockey</label><br>
+                        <input type="checkbox" name="cantar"
+                            value="cantar"><label
+                            for="cantar">Cantar</label><br>
+                        <input type="checkbox" name="actuar"
+                            value="actuar"><label for="actuar">Actuar</label>
+                    </div>
                 </div>
 
-                <div>
-                    <input type="checkbox" name="ajedrez" value="ajedrez"><label for="ajedrez">Ajedrez</label><br>
-                    <input type="checkbox" name="hockey" value="hockey"><label for="hockey">Hockey</label><br>
-                    <input type="checkbox" name="cantar" value="cantar"><label for="cantar">Cantar</label><br>
-                    <input type="checkbox" name="actuar" value="actuar"><label for="actuar">Actuar</label>
-                </div>
+                <input type="image" name="enviar"
+                    src="../../img/enviar-boton-naranja.png" width="100px"
+                    alt="Boton de enviar">
+
             </div>
-            
-            <input type="image" name="enviar" src="../../img/enviar-boton-naranja.png" width="100px" alt="Boton de enviar">
-            
-        </div>
-    </form>
-</body>
+        </form>
+    </body>
 </html>

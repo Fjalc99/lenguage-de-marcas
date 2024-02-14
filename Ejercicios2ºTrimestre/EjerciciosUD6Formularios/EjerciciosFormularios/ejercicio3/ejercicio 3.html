@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title>Ejercicio 3 - Formulario de alta</title> 
-	<meta charset="utf-8" /> 
-	<style type="text/css"> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 3 - Formulario de alta</title>
+		<meta charset="utf-8" />
+		<style type="text/css"> 
 	fieldset{
 		width: 30%;
 	}
@@ -15,14 +15,16 @@
 	}
 
 	.info{
-		width: 30%;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	.info2{
 		display: flex;
-		width: 30%;
+		
+	}
+	.correo{
+		display: flex;
 		flex-wrap: wrap;
 	}
 	.doscolumnas{
@@ -35,83 +37,87 @@
     margin-right: 30px;
     margin-bottom: 10px;
 }
-	</style> 
-</head> 
-<body> 
-<main>
-	<h2>Formulario de alta</h2> 
-	<form method="post" action="#"> 	
-		<div class="todo">
-		<fieldset class="info"> 
-			<label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label> 
-			<div> 
-				<input id="nombre" name="nombre" value="" /> <br>
-				<label for="nombre">Nombre</label> <br>		
-			
-				<input id="apellido1" name="apellido1" value="" /> <br>
-				<label for="apellido1">Primer apellido</label> <br>
-			
-				<input id="apellido2" name="apellido2" value="" /> <br>
-				<label for="apellido2">Segundo apellido</label> 
-				
-			</div> 
-			<p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
-		</fieldset> 
-		<fieldset class="info2"> 
-			<label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label> 
-			<div> 				
-				<input id="direccion" name="direccion" value="" /><br> 
-				<label for="direccion">Calle, número, piso, puerta</label> <br>
-			
-				<input id="codigopostal" name="codigopostal" value="" /> <br>
-				<label for="codigopostal">Código postal</label> <br>
-			
-				<input id="municipio" name="municipio" value="" /> <br>
-				<label for="municipio">Municipio</label> <br>
-				<div>
-					<select id="provincia" name="provincia"> <br>
-						<option value=""></option> 
-						<option value="provincia1">Provincia 1</option> 
-						<option value="provincia2">Provincia 2</option> 
-						<option value="provincia3">Provincia 3</option> 
-					</select> 
-					<label for="provincia">Provincia</label> <br>
-				
-					<select id="pais" name="pais"> <br>
-						<option value=""></option> 
-						<option value="pais1">País 1</option> 
-						<option value="pais2">País 2</option> 
-						<option value="pais3">País 3</option> 
-					</select> 
-					<label for="pais">País</label> 	<br>
+	</style>
+	</head>
+	<body>
+		<main>
+			<h2>Formulario de alta</h2>
+			<form method="post" action="#">
+				<div class="todo">
+					<fieldset class="info">
+						<label class="titulo" for="nombre">Nombre y apellidos <span
+								class="requerido">*</span></label>
+						<div>
+							<input id="nombre" name="nombre" value /> <br>
+							<label for="nombre">Nombre</label> <br>
+
+							<input id="apellido1" name="apellido1" value /> <br>
+							<label for="apellido1">Primer apellido</label> <br>
+
+							<input id="apellido2" name="apellido2" value /> <br>
+							<label for="apellido2">Segundo apellido</label>
+
+						</div>
+						<p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
+					</fieldset>
+					<fieldset class="info2">
+						<label class="titulo" for="direccion">Dirección <span
+								class="requerido">*</span></label>
+						<div>
+							<input id="direccion" name="direccion" value /><br>
+							<label for="direccion">Calle, número, piso, puerta</label> <br>
+
+							<input id="codigopostal" name="codigopostal" value /> <br>
+							<label for="codigopostal">Código postal</label> <br>
+
+							<input id="municipio" name="municipio" value /> <br>
+							<label for="municipio">Municipio</label> <br>
+							<div>
+								<select id="provincia" name="provincia"><br><br>
+									<option value></option>
+									<option value="provincia1">Provincia 1</option>
+									<option value="provincia2">Provincia 2</option>
+									<option value="provincia3">Provincia 3</option>
+								</select>
+								<label for="provincia">Provincia</label> <br>
+
+								<select id="pais" name="pais"> <br>
+									<option value></option>
+									<option value="pais1">País 1</option>
+									<option value="pais2">País 2</option>
+									<option value="pais3">País 3</option>
+								</select>
+								<label for="pais">País</label> <br>
+							</div>
+
+						</div>
+						<p class="ayuda">El código postal es imprescindible para poder recibir los
+							pedidos</p>
+					</fieldset>
+					<fieldset class="correo">
+						<label class="titulo" for="email">Email</label>
+						<div>
+							<input id="email" name="email" value />
+						</div>
+						<p class="ayuda">Asegúrate de que sea váfieldsetdo</p>
+					</fieldset>
+					<fieldset>
+						<label class="titulo" for="telefonofijo">Teléfono <span
+								class="requerido">*</span></label>
+						<div class="info2">
+							<input id="telefonofijo" name="telefonofijo" value /> <br>
+							<label for="telefonofijo">Fijo</label>
+
+							<input id="telefonomovil" name="telefonomovil" value /><br>
+							<label for="telefonomovil">Móvil</label>
+						</div>
+						<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
+					</fieldset>
 				</div>
-						
-			</div> 
-			<p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p> 
-		</fieldset> 
-		<fieldset> 
-			<label class="titulo" for="email">Email</label> 
-			<div> 
-				<input id="email" name="email" value="" /> 
-			</div> 
-			<p class="ayuda">Asegúrate de que sea váfieldsetdo</p> 
-		</fieldset> 
-		<fieldset> 
-			<label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label> 
-			<div class="info2"> 				
-				<input id="telefonofijo" name="telefonofijo" value="" /> <br>
-				<label for="telefonofijo">Fijo</label> 
-			
-				<input id="telefonomovil" name="telefonomovil" value="" /><br> 
-				<label for="telefonomovil">Móvil</label> 			
-			</div> 
-			<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p> 
-		</fieldset> 
-	</div>	
-		<fieldset> 
-			<input id="alta" type="submit" value="Darme de alta &rarr;" /> 
-		</fieldset> 		
-	</form> 
-</main>
-</body> 
+				<fieldset>
+					<input id="alta" type="submit" value="Darme de alta &rarr;" />
+				</fieldset>
+			</form>
+		</main>
+	</body>
 </html>

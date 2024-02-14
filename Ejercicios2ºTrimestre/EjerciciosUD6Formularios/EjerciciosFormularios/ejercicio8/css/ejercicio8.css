@@ -1,15 +1,16 @@
-form{
-   
+form {
+
     padding: 10px;
     width: 50%;
     background-color: lightgray;
 }
-h2{
+
+h2 {
     margin-bottom: 0px;
     width: 20%;
     background-color: lightgray;
 }
 
-.fecha input{
+.fecha input {
     margin-right: 40px;
 }
