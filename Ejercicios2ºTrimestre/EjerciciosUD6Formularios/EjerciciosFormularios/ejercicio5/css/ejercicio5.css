@@ -4,8 +4,12 @@ span {
 
 fieldset {
     display: flex;
-    width: 80%;
+    width: 65%;
     border: none;
+}
+
+fieldset:last-child{
+    border-top: 1px solid gray;
 }
 
 .titulo {
@@ -31,5 +35,5 @@ fieldset {
 }
 
 .enviar input {
-    margin-left: 550px;
+    margin-left: 500px;
 }
