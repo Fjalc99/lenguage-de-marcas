@@ -1,499 +1,523 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <header class="container-fluid text-center bg-primary">
-            <h1 class="m-0 text-warning">INAZUMA ELEVEN</h1>
-        </header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="javascript:void(0)"><img
-                        src="./img/raimonbuena.png" width="100px" alt></a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark bg-primary"
-                                href="javascript:void(0)">Portada</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark bg-warning"
-                                href="#info">Informacion del
-                                club</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark bg-primary"
-                                href="#fichas">Fichas del club</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark bg-warning"
-                                href="#tabla">Clasificacion de
-                                liga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark bg-primary"
-                                href="javascript:void(0)">Formulario de
-                                inscripcion del club</a>
-                        </li>
-                    </ul>
-                    <!-- <div class="d-flex">
-                        <form>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" class="form-control"
-                                        placeholder="Enter email" name="email">
-                                </div>
-                                <div class="col">
-                                    <input type="password" class="form-control"
-                                        placeholder="Enter password"
-                                        name="pswd">
-                                </div>
-                            </div>
-                        </form>
-                     </div> -->
+<body>
+    <header class="container-fluid text-center bg-primary">
+        <h1 class="m-0 text-warning">INAZUMA ELEVEN</h1>
+    </header>
 
-                     <div class="d-flex">   
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
-                          Iniciar Sesión
-                        </button>
-                      </div>
+    <!-- Menu con formulario de inicar sesion con modal -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/raimonbuena.png" width="100px" alt></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-primary" href="javascript:void(0)">Portada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-warning" href="#info">Informacion del
+                            club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-primary" href="#fichas">Fichas del club</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-warning" href="#tabla">Clasificacion de
+                            liga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark bg-primary" href="javascript:void(0)">Formulario de
+                            inscripcion del club</a>
+                    </li>
+                </ul>
 
-                      <div class="modal" id="myModal">
-                        <div class="modal-dialog modal-sm">
-                          <div class="modal-content">
-                      
-                          
+                <div class="d-flex">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Iniciar Sesión
+                    </button>
+                </div>
+
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+
                             <div class="modal-header">
-                              <h4 class="modal-title">Incio sesión</h4>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                <h4 class="modal-title">Incio sesión</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-                      
-                            
+
+
                             <div class="modal-body">
                                 <form>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" class="form-control"
-                                                placeholder="Correo" name="email">
+                                            <input type="text" class="form-control" placeholder="Correo" name="email">
                                         </div>
                                         <div class="col">
-                                            <input type="password" class="form-control"
-                                                placeholder="Contraseña"
+                                            <input type="password" class="form-control" placeholder="Contraseña"
                                                 name="pswd">
                                         </div>
+
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                      
-                          </div>
-                        </div>
-                      </div>
-
-                </div>
-            </div>
-        </nav>
-        <div id="envoltorio" class="container-fluid">
-            <div class="row">
-
-                <aside class="col-12 col-lg-2 bg-primary">Izquierda</aside>
-                <main class="col-12 col-lg-8 bg-secondary text-white">
-
-                    <section class="container-fluid text-center mt-2">
-                        <img class="img-fluid" src="./img/raimonEquipo.png"
-                            alt="Raimon" width="90%" height="90%">
-                    </section>
-                    <section class="m-2">
-                        <h3 id="info">Informacion del club</h3>
-                        <p>
-                            Instituto Raimon es el equipo protagonista de la
-                            Saga de
-                            Mark y de la
-                            franquicia de Inazuma Eleven en general. Su capitán
-                            es
-                            Mark Evans, un entusiasta del fútbol que, junto con
-                            Silvia Woods, fundaron el legendario club cuando
-                            iban a
-                            primero.
-                        </p>
-
-                        <p>
-                            Era considerado como el peor equipo de fútbol del
-                            país,
-                            ya que solo tenía 7 jugadores, pero después de
-                            marcarle
-                            un gol en un partido a la Royal Academy, (aunque fue
-                            por
-                            el abandono de William Glass, cuando Axel Blaze les
-                            metió un gol con el Tornado de Fuego), descubrieron
-                            que
-                            ese era el principio del resurgir del Raimon, al
-                            enterarse de la leyenda de los Inazuma Eleven, que
-                            era
-                            el equipo del Raimon hace 40 años, que pese a su
-                            disolución por culpa de un trágico accidente antes
-                            de la
-                            final contra la Royal Academy de aquel entonces, los
-                            miembros actuales continúan con su legado ganando
-                            todos
-                            los partidos del torneo.
-                        </p>
-
-                        <p>
-                            Al ganar el torneo Fútbol Frontier venciendo al
-                            Zeus,
-                            aparecieron unos "extraterrestres" que recibían su
-                            increíble fuerza de la Piedra Alius, los cuales
-                            amenazaban con acabar con todos los institutos del
-                            país
-                            y del mundo bajo el seudónimo de Academia Alius,
-                            esto
-                            enfureció enormemente al equipo que para evitarlo
-                            decidió viajar por todo Japón para reunir a los
-                            mejores
-                            jugadores del país y vencer a los "extraterrestres",
-                            logrando derrotarlos tras varios partidos muy
-                            difíciles
-                            y tras reclutar a varios miembros temporales para la
-                            causa. Aunque al final del recorrido, tuvieron que
-                            enfrentarse a un partido más contra los Emperadores
-                            Oscuros, un equipo compuesto por los miembros que
-                            fueron
-                            dados de baja durante la Guerra contra la Academia
-                            Alius, aunque después éstos logran recapacitar
-                            gracias a
-                            Mark.
-                        </p>
-
-                        <p>
-                            Para el torneo Fútbol Frontier Internacional, la
-                            mayoría
-                            de los miembros del Inazuma Japón provienen de este
-                            equipo (sin contar a los que se unieron
-                            temporalmente
-                            durante la guerra contra la Academia Alius). Además
-                            de
-                            que en el Episodio 121, varios jugadores de otros
-                            clubes
-                            del instituto se unieron al equipo.
-                        </p>
-                    </section>
-
-                    <section class="container">
-                        <h3 id="fichas">Fichas del club</h3>
-
-                        <div class="row m-2">
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/Mark.jpg"
-                                    alt="Card image" style="height: 500px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Mark Evans</h4>
-                                    <p class="card-text">Mark ingresa a la
-                                        secundaria en el Instituto Raimon donde
-                                        se
-                                        enteraría que el club de fútbol llevaba
-                                        décadas cerrado por lo que con ayuda de
-                                        su
-                                        nueva amiga Silvia Woods volverían a
-                                        abrir el club. Mark lograría reunir
-                                        nuevos
-                                        miembros pero no suficientes para ser un
-                                        equipo completo.<br>
-                                        Es el capitán, portero y líbero del club
-                                        de fútbol del Instituto
-                                        Raimon y de la selección japonesa,
-                                        Inazuma Japón.</p>
-                                    <a href="#" class="btn btn-primary mt-5">See
-                                        Profile</a>
+                                <div class="row">
+                                    <input type="submit" value="enviar">
                                 </div>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                             </div>
 
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/axelblaze.jpg" alt="Card image"
-                                    style="height: 500px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Axel Blaze</h4>
-                                    <p class="card-text">Axel decidió abandonar
-                                        el fútbol pero al llegar al Instituto
-                                        Raimon
-                                        se
-                                        encuentra a Mark Evans, portero y
-                                        capitán del equipo de fútbol del Raimon
-                                        quien de
-                                        inmediato le pide que se una al equipo,
-                                        pero Axel se niega. Al día siguiente,
-                                        el Instituto Raimon tiene un partido
-                                        contra la Royal Academy al ver que Mark
-                                        no se
-                                        da por
-                                        vencido decide jugar.<br>
-                                        Fue el delantero estrella del Instituto
-                                        Kirkwood y ahora es delantero estrella
-                                        del
-                                        Instituto Raimon y la selección de
-                                        Inazuma Japón.</p>
-                                    <a href="#" class="btn btn-primary mt-2">See
-                                        Profile</a>
-                                </div>
-                            </div>
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/JudeSharp.jpg" alt="Card image"
-                                    style="height: 500px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Jude Sharp</h4>
-                                    <p class="card-text">Fue inicialmente
-                                        miembro y capitán de la Royal Academy
-                                        hasta su
-                                        aplastante derrota contra el Instituto
-                                        Zeus, momento en el que se une al
-                                        Instituto
-                                        Raimon para vengar la humillación que
-                                        ellos le hicieron a él y a sus
-                                        ex-compañeros
-                                        de la Royal Academy.
-                                        cambió su capa de color azul en el
-                                        Raimon Él siempre lleva
-                                        gafas de "protección" que le dio Ray
-                                        Dark para mejorar su juego, aunque no
-                                        las necesite por problemas de vista.
-                                    </p>
-                                    <a href="#" class="btn btn-primary mt-4">See
-                                        Profile</a>
-                                </div>
-                            </div>
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/kabeyama_heigoro_5368.webp"
-                                    alt="Card image"
-                                    style="height: 318px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Jack Wallside</h4>
-                                    <p class="card-text">
-                                        Jack fue uno de los siete primeros
-                                        jugadores del Instituto Raimon. Se ponía
-                                        fácilmente nervioso antes de cada
-                                        partido,
-                                        Mark Evans le animó a enfrentarse a las
-                                        cosas que le dan miedo, y a no
-                                        esconderse
-                                        nunca. Jack le hizo caso, y fue a jugar
-                                        el partido.<br>
-                                        El juega como defensa del Instituto
-                                        Raimon y fue seleccionado para
-                                        formar parte de Inazuma Japón.</p>
-                                    <a href="#" class="btn btn-primary">See
-                                        Profile</a>
-                                </div>
-                            </div>
-
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/kazemaru_ichirota_3153.webp"
-                                    alt="Card image"
-                                    style="height: 318px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Nathan Swift</h4>
-                                    <p class="card-text">En su juventud, fue
-                                        inicialmente miembro del Club de
-                                        Atletismo y
-                                        mas tarde pasa a ser miembro del club de
-                                        fútbol del Raimon. También fue,
-                                        temporalmente, el capitán de los
-                                        Emperadores Oscuros en la segunda
-                                        temporada y en la
-                                        tercera temporada, fue seleccionado para
-                                        la selección de Inazuma Japón,
-                                        alternando
-                                        entre defensa y centrocampista.</p>
-                                    <a href="#" class="btn btn-primary">See
-                                        Profile</a>
-                                </div>
-                            </div>
-                            <div class="card col-12 col-lg-4">
-                                <img class="card-img-top mt-3"
-                                    src="./img/Erick.webp"
-                                    alt="Card image" style="height: 318px;">
-                                <div class="card-body">
-                                    <h4 class="card-title">Erik Eagle</h4>
-                                    <p class="card-text">Apodado como
-                                        "El mago del campo", es el amigo de
-                                        Silvia y Bobby de
-                                        Estados Unidos, el Raimon decide
-                                        aceptarle en el equipo ya que se va a
-                                        quedar en la
-                                        ciudad y les demuestra que es uno de los
-                                        mejores centrocampistas, a la vez que
-                                        desarrolla junto a Mark Evans y Bobby la
-                                        supertécnica del Tri-Pegaso que luego se
-                                        transformó en Fénix en el partido contra
-                                        el Instituto Kirkwood..</p>
-                                    <a href="#" class="btn btn-primary">See
-                                        Profile</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <h2 id="tabla" class="mt-5">Clasificacion de liga</h2>
-                    <div class="container">
-                        <div class="table-responsive">
-                            <table class="table-sm table table-bordered text-center">
-                                <thead>
-                                    <tr>
-                                        <th>Posición</th>
-                                        <th></th>
-                                        <th>Equipo</th>
-                                        <th>PT</th>
-                                        <th>PJ</th>
-                                        <th>PG</th>
-                                        <th>PP</th>
-                                        <th>PE</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td><img src="./img/raimonbuena.png" height="50px" alt="Instituto raimon"></td>
-                                        <td>Instituto Raimon</td>
-                                        <td>27</td>
-                                        <td>9</td>
-                                        <td>9</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td><img src="./img/Escudo_-_Royal_Academy_29.webp" height="50px" alt="Instituto royal academy"></td>
-                                        <td>Instituto Royal academy</td>
-                                        <td>24</td>
-                                        <td>9</td>
-                                        <td>8</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td><img src="./img/Zeus.webp" height="50px" alt="Instituto Zeus"></td>
-                                        <td>Instituto Zeus</td>
-                                        <td>22</td>
-                                        <td>9</td>
-                                        <td>7</td>
-                                        <td>1</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td><img src="./img/Escudo_-_Occult_29.webp" height="50px" alt="Instituto occult"></td>
-                                        <td>Instituto Occult</td>
-                                        <td>21</td>
-                                        <td>9</td>
-                                        <td>7</td>
-                                        <td>2</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td><img src="./img/Kirwood.webp" height="50px" alt="Instituto Kirkwood"></td>
-                                        <td>Instituto Kirkwood</td>
-                                        <td>19</td>
-                                        <td>9</td>
-                                        <td>6</td>
-                                        <td>2</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td><img src="./img/Escudo_-_Wild_29.webp" height="50px" alt="Instituto wild"></td>
-                                        <td>Instituto Wild</td>
-                                        <td>18</td>
-                                        <td>9</td>
-                                        <td>6</td>
-                                        <td>3</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td><img src="./img/Escudo_-_Brain_29.webp" height="50px" alt="Instituto brain"></td>
-                                        <td>Instituto Brain</td>
-                                        <td>15</td>
-                                        <td>9</td>
-                                        <td>5</td>
-                                        <td>4</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td><img src="./img/Escudo_-_Farm_29.webp" height="50px" alt="Instituto farm"></td>
-                                        <td>Instituto Farm</td>
-                                        <td>13</td>
-                                        <td>9</td>
-                                        <td>4</td>
-                                        <td>4</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td><img src="./img/Escudo_-_Shuriken_29.webp" height="50px" alt="Instituto shuriken"></td>
-                                        <td>Instituto Shuriken</td>
-                                        <td>10</td>
-                                        <td>9</td>
-                                        <td>3</td>
-                                        <td>5</td>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td><img src="./img/Escudo_-_Otaku_29.webp" height="50px" alt="Instituto otaku"></td>
-                                        <td>Instituto Otaku</td>
-                                        <td>3</td>
-                                        <td>9</td>
-                                        <td>1</td>
-                                        <td>8</td>
-                                        <td>0</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
                         </div>
                     </div>
+                </div>
 
-                    <section id="filaFotos" class="row">
-                        <p class="col-12 col-lg">columna 1</p>
-                        <p class="col-12 col-lg">columna 2</p>
-                        <p class="col-12 col-lg">columna 3</p>
-                    </section>
-
-                </main>
-                <aside class="col-12 col-lg-2 bg-primary">Derecha</aside>
             </div>
         </div>
-        <footer class="container-fluid bg-warning">
-            Pie de pagina
-        </footer>
+    </nav>
+    <div id="envoltorio" class="container-fluid">
+        <div class="row">
 
-    </body>
+            <aside class="col-12 col-lg-2 bg-primary">Izquierda</aside>
+            <main class="col-12 col-lg-8 bg-secondary text-white">
+
+                <section class="container-fluid text-center mt-2">
+                    <img class="img-fluid mt-2" src="./img/raimonEquipo.png" alt="Raimon" width="90%" height="90%">
+                </section>
+
+                <!-- Informacion -->
+                <section class="m-2">
+                    <h3 id="info">Informacion del club</h3>
+                    <p>
+                        Instituto Raimon es el equipo protagonista de la
+                        Saga de
+                        Mark y de la
+                        franquicia de Inazuma Eleven en general. Su capitán
+                        es
+                        Mark Evans, un entusiasta del fútbol que, junto con
+                        Silvia Woods, fundaron el legendario club cuando
+                        iban a
+                        primero.
+                    </p>
+
+                    <p>
+                        Era considerado como el peor equipo de fútbol del
+                        país,
+                        ya que solo tenía 7 jugadores, pero después de
+                        marcarle
+                        un gol en un partido a la Royal Academy, (aunque fue
+                        por
+                        el abandono de William Glass, cuando Axel Blaze les
+                        metió un gol con el Tornado de Fuego), descubrieron
+                        que
+                        ese era el principio del resurgir del Raimon, al
+                        enterarse de la leyenda de los Inazuma Eleven, que
+                        era
+                        el equipo del Raimon hace 40 años, que pese a su
+                        disolución por culpa de un trágico accidente antes
+                        de la
+                        final contra la Royal Academy de aquel entonces, los
+                        miembros actuales continúan con su legado ganando
+                        todos
+                        los partidos del torneo.
+                    </p>
+
+                    <p>
+                        Al ganar el torneo Fútbol Frontier venciendo al
+                        Zeus,
+                        aparecieron unos "extraterrestres" que recibían su
+                        increíble fuerza de la Piedra Alius, los cuales
+                        amenazaban con acabar con todos los institutos del
+                        país
+                        y del mundo bajo el seudónimo de Academia Alius,
+                        esto
+                        enfureció enormemente al equipo que para evitarlo
+                        decidió viajar por todo Japón para reunir a los
+                        mejores
+                        jugadores del país y vencer a los "extraterrestres",
+                        logrando derrotarlos tras varios partidos muy
+                        difíciles
+                        y tras reclutar a varios miembros temporales para la
+                        causa. Aunque al final del recorrido, tuvieron que
+                        enfrentarse a un partido más contra los Emperadores
+                        Oscuros, un equipo compuesto por los miembros que
+                        fueron
+                        dados de baja durante la Guerra contra la Academia
+                        Alius, aunque después éstos logran recapacitar
+                        gracias a
+                        Mark.
+                    </p>
+
+                    <p>
+                        Para el torneo Fútbol Frontier Internacional, la
+                        mayoría
+                        de los miembros del Inazuma Japón provienen de este
+                        equipo (sin contar a los que se unieron
+                        temporalmente
+                        durante la guerra contra la Academia Alius). Además
+                        de
+                        que en el Episodio 121, varios jugadores de otros
+                        clubes
+                        del instituto se unieron al equipo.
+                    </p>
+                </section>
+
+
+                <!-- Cartas -->
+                <section class="container">
+
+                    <h3 id="fichas">Fichas del club</h3>
+
+                    <div class="row m-2">
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/Mark.jpg" alt="Carta de Mark" style="height: 500px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Mark Evans</h4>
+                                <p class="card-text">Mark ingresa a la
+                                    secundaria en el Instituto Raimon donde
+                                    se
+                                    enteraría que el club de fútbol llevaba
+                                    décadas cerrado por lo que con ayuda de
+                                    su
+                                    nueva amiga Silvia Woods volverían a
+                                    abrir el club. Mark lograría reunir
+                                    nuevos
+                                    miembros pero no suficientes para ser un
+                                    equipo completo.<br>
+                                    Es el capitán, portero y líbero del club
+                                    de fútbol del Instituto
+                                    Raimon y de la selección japonesa,
+                                    Inazuma Japón.</p>
+                                <a href="#" class="btn btn-primary mt-5">See
+                                    Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/axelblaze.jpg" alt="Carta de Axel"
+                                style="height: 500px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Axel Blaze</h4>
+                                <p class="card-text">Axel decidió abandonar
+                                    el fútbol pero al llegar al Instituto
+                                    Raimon
+                                    se
+                                    encuentra a Mark Evans, portero y
+                                    capitán del equipo de fútbol del Raimon
+                                    quien de
+                                    inmediato le pide que se una al equipo,
+                                    pero Axel se niega. Al día siguiente,
+                                    el Instituto Raimon tiene un partido
+                                    contra la Royal Academy al ver que Mark
+                                    no se
+                                    da por
+                                    vencido decide jugar.<br>
+                                    Fue el delantero estrella del Instituto
+                                    Kirkwood y ahora es delantero estrella
+                                    del
+                                    Instituto Raimon y la selección de
+                                    Inazuma Japón.</p>
+                                <a href="#" class="btn btn-primary mt-2">See
+                                    Profile</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/JudeSharp.jpg" alt="Carta de Jude"
+                                style="height: 500px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Jude Sharp</h4>
+                                <p class="card-text">Fue inicialmente
+                                    miembro y capitán de la Royal Academy
+                                    hasta su
+                                    aplastante derrota contra el Instituto
+                                    Zeus, momento en el que se une al
+                                    Instituto
+                                    Raimon para vengar la humillación que
+                                    ellos le hicieron a él y a sus
+                                    ex-compañeros
+                                    de la Royal Academy.
+                                    cambió su capa de color azul en el
+                                    Raimon Él siempre lleva
+                                    gafas de "protección" que le dio Ray
+                                    Dark para mejorar su juego, aunque no
+                                    las necesite por problemas de vista.
+                                </p>
+                                <a href="#" class="btn btn-primary mt-4">See
+                                    Profile</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/kabeyama_heigoro_5368.webp" alt="Carta de Jack Wallside"
+                                style="height: 318px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Jack Wallside</h4>
+                                <p class="card-text">
+                                    Jack fue uno de los siete primeros
+                                    jugadores del Instituto Raimon. Se ponía
+                                    fácilmente nervioso antes de cada
+                                    partido,
+                                    Mark Evans le animó a enfrentarse a las
+                                    cosas que le dan miedo, y a no
+                                    esconderse
+                                    nunca. Jack le hizo caso, y fue a jugar
+                                    el partido.<br>
+                                    El juega como defensa del Instituto
+                                    Raimon y fue seleccionado para
+                                    formar parte de Inazuma Japón.</p>
+                                <a href="#" class="btn btn-primary">See
+                                    Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/kazemaru_ichirota_3153.webp" alt="Carta de Nathan"
+                                style="height: 318px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Nathan Swift</h4>
+                                <p class="card-text">En su juventud, fue
+                                    inicialmente miembro del Club de
+                                    Atletismo y
+                                    mas tarde pasa a ser miembro del club de
+                                    fútbol del Raimon. También fue,
+                                    temporalmente, el capitán de los
+                                    Emperadores Oscuros en la segunda
+                                    temporada y en la
+                                    tercera temporada, fue seleccionado para
+                                    la selección de Inazuma Japón,
+                                    alternando
+                                    entre defensa y centrocampista.</p>
+                                <a href="#" class="btn btn-primary">See
+                                    Profile</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-4">
+                            <img class="card-img-top mt-3" src="./img/Erick.webp" alt="Carta de Erik"
+                                style="height: 318px;">
+                            <div class="card-body">
+                                <h4 class="card-title">Erik Eagle</h4>
+                                <p class="card-text">Apodado como
+                                    "El mago del campo", es el amigo de
+                                    Silvia y Bobby de
+                                    Estados Unidos, el Raimon decide
+                                    aceptarle en el equipo ya que se va a
+                                    quedar en la
+                                    ciudad y les demuestra que es uno de los
+                                    mejores centrocampistas, a la vez que
+                                    desarrolla junto a Mark Evans y Bobby la
+                                    supertécnica del Tri-Pegaso que luego se
+                                    transformó en Fénix en el partido contra
+                                    el Instituto Kirkwood..</p>
+                                <a href="#" class="btn btn-primary">See
+                                    Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Tabla -->
+                <h2 id="tabla" class="mt-5">Clasificacion de liga</h2>
+                <div class="container">
+                    <div class="table-responsive">
+                        <table class="table-sm table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th>Posición</th>
+                                    <th></th>
+                                    <th>Equipo</th>
+                                    <th>PT</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PP</th>
+                                    <th>PE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="./img/raimonbuena.png" height="50px" alt="Instituto raimon"></td>
+                                    <td>Instituto Raimon</td>
+                                    <td>27</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="./img/Escudo_-_Royal_Academy_29.webp" height="50px"
+                                            alt="Instituto royal academy"></td>
+                                    <td>Instituto Royal academy</td>
+                                    <td>24</td>
+                                    <td>9</td>
+                                    <td>8</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><img src="./img/Zeus.webp" height="50px" alt="Instituto Zeus"></td>
+                                    <td>Instituto Zeus</td>
+                                    <td>22</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><img src="./img/Escudo_-_Occult_29.webp" height="50px" alt="Instituto occult">
+                                    </td>
+                                    <td>Instituto Occult</td>
+                                    <td>21</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><img src="./img/Kirwood.webp" height="50px" alt="Instituto Kirkwood"></td>
+                                    <td>Instituto Kirkwood</td>
+                                    <td>19</td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><img src="./img/Escudo_-_Wild_29.webp" height="50px" alt="Instituto wild"></td>
+                                    <td>Instituto Wild</td>
+                                    <td>18</td>
+                                    <td>9</td>
+                                    <td>6</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><img src="./img/Escudo_-_Brain_29.webp" height="50px" alt="Instituto brain">
+                                    </td>
+                                    <td>Instituto Brain</td>
+                                    <td>15</td>
+                                    <td>9</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><img src="./img/Escudo_-_Farm_29.webp" height="50px" alt="Instituto farm"></td>
+                                    <td>Instituto Farm</td>
+                                    <td>13</td>
+                                    <td>9</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><img src="./img/Escudo_-_Shuriken_29.webp" height="50px"
+                                            alt="Instituto shuriken"></td>
+                                    <td>Instituto Shuriken</td>
+                                    <td>10</td>
+                                    <td>9</td>
+                                    <td>3</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td><img src="./img/Escudo_-_Otaku_29.webp" height="50px" alt="Instituto otaku">
+                                    </td>
+                                    <td>Instituto Otaku</td>
+                                    <td>3</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                    <td>0</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2>Máximos goleadores de la liga</h2>
+
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                  <!-- Carrusel -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/Axel.jpg" alt="Axel Blaze" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                          <h3 class="text-dark bg-light m-0">Axel Blaze</h3>
+                          <p class="text-dark bg-light m-0">30 Goles</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/Byron.jpg" alt="Byron Love" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                          <h3 class="text-dark bg-light m-0">Byron Love</h3>
+                          <p class="text-dark bg-light m-0">26 Goles</p>
+                        </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/DavidCarrusel.webp" alt="David Samford" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                          <h3 class="text-dark bg-light m-0">David Samford</h3>
+                          <p class="text-dark bg-light m-0">22 Goles</p>
+                        </div>  
+                      </div>
+                    </div>
+                    
+                
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark"></span>
+                    </button>
+                  </div>
+                  
+                
+                <section id="filaFotos" class="row">
+                    <p class="col-12 col-lg">columna 1</p>
+                    <p class="col-12 col-lg">columna 2</p>
+                    <p class="col-12 col-lg">columna 3</p>
+                </section>
+
+            </main>
+            <aside class="col-12 col-lg-2 bg-primary">Derecha</aside>
+        </div>
+    </div>
+    <footer class="container-fluid bg-warning">
+        Pie de pagina
+    </footer>
+
+</body>
 
 </html>
