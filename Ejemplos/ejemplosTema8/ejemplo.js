@@ -7,3 +7,8 @@ alert("Estamos en "+mes);
 
 /*Arrays*/
 //let dia = new dias("Lunes",0,"Martes"); 
+
+let meses= ['ene','feb','mar','abr']
+for(let mes of meses){
+    alert (mes);
+}
