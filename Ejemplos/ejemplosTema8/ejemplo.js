@@ -16,7 +16,7 @@ for(let mes of meses){
 //let valores = [true, 5, false, "hola", "adios", 2];
 
 
-let mensaje = "hola hola vecinito"
+//let mensaje = "hola hola vecinito"
 //let letra = mensaje.charAt(5);
 //alert(letra)
 //-------------------------------------------------------------------------
@@ -33,3 +33,74 @@ let mensaje = "hola hola vecinito"
 for (let parte of partes){
     alert(parte);
 }*/
+//--------------------------------------------------------------------------
+//concat()
+//let laborables = ['lunes','martes','miercoles','jueves','viernes']
+//let finde = ['sabado','domingo']
+
+//let semana = laborables.concat(finde)
+
+/*alert('En semana: '+semana)
+alert('En laborables: '+laborables)
+alert('En finde: '+finde)*/
+//----------------------------------------------------------------------------
+//join(separador)
+//let letras = laborables.join('  * ')
+
+//alert('En laborables '+letras)
+
+//----------------------------------------------------------------------------
+//pop() Elemina el ultimo del array
+
+//let dias = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+//let ultimo = dias.pop(dias)
+
+
+
+//alert(dias)
+
+
+//------------------------------------------------------------------------------
+//push() Añade al final del array
+
+//let dias = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+//let ultimo = dias.pop(dias)
+//dias.push(ultimo)
+
+//alert(dias)
+
+//-------------------------------------------------------------------------------
+//shift()  Este quita el primer elemento
+
+//let dias = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+//let primero = dias.shift(dias)
+
+//alert(dias)
+
+
+//--------------------------------------------------------------------------------
+//unshift() Este mete en el primer lugar
+
+/*let dias = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+let primero = dias.shift(dias)
+dias.unshift(primero)
+alert(dias)*/
+
+//----------------------------------------------------------------------------------
+//indexOf()
+/*let dias = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+alert('El domingo es el elemento: '+ dias.indexOf('domingo'))*/
+
+
+//------------------------------------------------------------------------------------
+//lastInedOf()
+
+/*let dias = ['domingo','lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+alert('El domingo es el elemento: '+dias.lastIndexOf('domingo'))*/
+
+//-------------------------------------------------------------------------------------------
+//toFixed()  Redondea los decimales que indiques
+
+//let num = 345.25874621;
+//alert(num.toFixed(9))
+
