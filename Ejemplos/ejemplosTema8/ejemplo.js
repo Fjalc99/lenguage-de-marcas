@@ -104,3 +104,92 @@ alert('El domingo es el elemento: '+dias.lastIndexOf('domingo'))*/
 //let num = 345.25874621;
 //alert(num.toFixed(9))
 
+//-------------------------------------------------------------------------------------------
+//Do while para no parar de meter palabras hasta que pulses intro sin meter ningún dato
+/*let unArray = leerArrayPorTeclado();
+alert('El array tiene '+ unArray.length+' el elemento es '+unArray)
+
+
+function leerArrayPorTeclado() {
+    let continuar;
+    let miArray = new Array();
+
+
+    do {
+       let dato = prompt("Diga algo para guardar en el array")
+       continuar = dato!=='';
+       if (continuar) {
+        miArray.push(dato);
+       }
+       miArray.push(dato)
+        
+        
+    } while (continuar);
+
+    return miArray;
+}*/
+
+
+//-----------------------------------------------------------------------------------------------
+//Lo mismo pero con while
+
+/*let unArray = leerArrayPorTeclado();
+alert('El array tiene '+ unArray.length+' el elemento es '+unArray)
+
+
+function leerArrayPorTeclado() {
+
+    let miArray = new Array();
+
+    let dato = prompt("Diga algo para guardar en el array")
+    while (dato!=='') {
+        miArray.push(dato)
+        let dato = prompt("Diga algo para guardar en el array")
+    }
+
+    return miArray;
+}*/
+
+
+//------------------------------------------------------------------------------------------
+//Lo mismo pero con el Bucle for
+
+/*let unArray = leerArrayPorTeclado();
+alert('El array tiene '+ unArray.length+' el elemento es '+unArray)
+
+
+function leerArrayPorTeclado() {
+
+    let miArray = new Array();
+
+    let dato = prompt("Diga algo para guardar en el array")
+    for (;dato!== '' ;dato = prompt("Diga algo para guardar en el array")) {
+        miArray.push(dato)
+    }
+
+    return miArray;
+}*/
+
+//-----------------------------------------------------------------------------------------------
+//Sacar el primero y guardarlo ahi
+
+/*let unArray = leerArrayPorTeclado();
+alert('El array tiene '+ unArray.length+' el elemento es '+unArray)
+
+
+function leerArrayPorTeclado() {
+
+    let miArray = new Array();
+    const limite = 3;
+
+    let dato = prompt("Diga algo para guardar en el array")
+    while (dato !=='') {
+        if(miArray.length>=limite){
+            miArray.shift();
+        }
+    
+        miArray.push(dato);
+        dato = prompt("Diga algo para guardar en el array")
+    }
+    return miArray;
+}*/
