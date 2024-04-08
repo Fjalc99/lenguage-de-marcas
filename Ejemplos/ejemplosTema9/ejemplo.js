@@ -87,10 +87,10 @@ zonaMensajes.hidden = !zonaMensajes.hidden
 */
 
 //----------------------------------------------------------------------------------
-
+/*
 let zonaMensajes = document.querySelector('.zonaMensajes')
 
-zonaMensajes.innerText = "El boton es del tipo " +boton.type
+zonaMensajes.innerText = "El boton es del tipo " +boton.type*/
 
 
 /*let enlace = document.createElement('a');
@@ -104,9 +104,9 @@ zonaMensajes.append(enlace);*/
 //_____________________________________________________________________________________
 
 //boton.className +=  ' text-success' //siempre hay que dar un espaacio despues de la primera comilla
-
+/*
 boton.classList.toggle('btn-primary')
-boton.classList.toggle('btn-success')
+boton.classList.toggle('btn-success') */
 
 
 }
