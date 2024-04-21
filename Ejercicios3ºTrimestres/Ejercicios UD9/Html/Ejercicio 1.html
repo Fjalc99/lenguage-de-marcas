@@ -14,11 +14,32 @@
 		function cuentaEnlaces() {
 			// Numero de enlaces de la pagina
 
+			let enlaces = document.querySelectorAll('a')
+			alert(enlaces.length)
+
+
 			// Direccion del penultimo enlace
+
+			let penultimoEnlace = enlaces[enlaces.length-2].href
+			alert(penultimoEnlace)			
 
 			// Numero de enlaces que apuntan a http://prueba
 
+			let contador = 0;
+			for(let a of enlaces){
+				if(a.href === 'http://prueba/')
+				contador++;
+			}
+
+			alert("Hay "+contador+ " enlaces que apunta a prueba")
+			
+
 			// Numero de enlaces del tercer párrafo
+
+			let enlaces3parrafo = document.querySelectorAll('p:nth-child(3) a')
+			alert("Hay "+enlaces3parrafo.length+ " enlaces en el tercer parrafo")
+
+
 		}
 	</script>
 </head>

@@ -9,11 +9,14 @@
         *{
             box-sizing: border-box;
         }
+
+
     form{
         background-color: rgb(240, 176, 131);
         border: 2px solid darkgreen;
         padding: 2px;
         width: 70%;
+        
     }
     .primerformulario{
     display: flex;
@@ -27,18 +30,21 @@
     
     input{
         display: block;
-        width: 66%;
+        width:30%;
     }
     
     input:focus{
         background-color: aquamarine;
         color: brown;
         border: 3px solid rgb(0, 0, 0);
+        outline: none;
     }
     /*Toda eiqueta form tiene que tener minimo name=" " ,method=" ", action= " "*/
     /*El apartado de mehtod y action se deja en blanco hasta el proyecto*/
     /*En la etiqueta input tiene que tener minimo typwe= "" , name=" ", id=" "*/
     </style>
+
+    <script src="./formularios.js" defer></script>
 </head>
 
 <body>
@@ -57,6 +63,15 @@
             <label for="apellido1">Primer Apellido</label>
         <input type="text" name="apellido1" id="apellido1">
         </div>
+
+        <div class="primerformulario">
+            <label for="aficiones">aficion</label>
+            <input type="checkbox" value="aficiones">
+        </div>
+        <div class="primerformulario">
+            <input type="submit" value="Enviar">
+        </div>
+
     </form>
 
 </body>
