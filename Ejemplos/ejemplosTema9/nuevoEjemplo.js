@@ -41,7 +41,15 @@ function validarFormulario(elEvento) {
         resultado=false;
     }
 
-    if (reslutado) {
+    if (resultado) {
         formulario.submit();
+    }
+
+    function enviarFormulario(Evento){
+        Evento.preventDefault();
+
+        alert('He parado el formulario')
+        formulario.submit();
+       
     }
 }
