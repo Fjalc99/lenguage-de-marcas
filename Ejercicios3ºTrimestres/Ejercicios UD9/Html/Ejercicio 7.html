@@ -11,66 +11,71 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="../js/Ejercicios 7-14.js" defer></script>
 
 <body>
- <header class="container-fluid bg-success text-light">
+  <header class="container-fluid bg-success text-light">
     <p>Esto es un header</p>
- </header>
+</header>
 <main class="container">
 
     <div class="container mt-3">
-        <form action="/action_page.php">
-          <div class="mb-3 mt-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre">
-          </div>
-          <div class="mb-3">
-            <label for="apellidos" class="form-label">Apellidos:</label>
-            <input type="text" class="form-control" id="apellidos" name="apellidos">
-          </div>
+        <form action="">
+            <div class="mb-3 mt-3 input-group">
+                <label for="nombre" class="input-group-text">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="apellidos" class="input-group-text">Apellidos:</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos">
+            </div>
         </form>
-      </div>
+    </div>
 
-      <div class="container mt-3">
-        <form action="/action_page.php">
-          <div class="mb-3 mt-3">
-            <label for="dni" class="form-label">DNI:</label>
-            <input type="text" class="form-control" id="dni" name="dni" pattern="[0-9]{8}[A-Z]{1}">
-          </div>
-          <div class="mb-3">
-            <label for="correoElectronico" class="form-label">Correo Electronico:</label>
-            <input type="email" class="form-control" id="correoElectronico" name="correoElectronico">
-          </div>
+    <div class="container mt-3">
+        <form action="">
+            <div class="mb-3 mt-3 input-group">
+                <label for="dni" class="input-group-text">DNI:</label>
+                <input type="text" class="form-control" id="dni" name="dni" pattern="[0-9]{8}[A-Z]{1}">
+            </div>
+            <div class="mb-3 input-group">
+                <label for="correoElectronico" class="input-group-text">Correo Electronico:</label>
+                <input type="email" class="form-control" id="correoElectronico" name="correoElectronico">
+            </div>
         </form>
-      </div>
+    </div>
 
-      <div class="container mt-3">
-        <form action="/action_page.php">
-          <div class="mb-3 mt-3">
-            <label for="contraseña" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="contraseña" name="contraseña">
-          </div>
-          <div class="mb-3">
-            <label for="repcontraseña" class="form-label">Repetir contraseña:</label>
-            <input type="password" class="form-control" id="repcontraseña" name="repcontraseña">
-          </div>
+    <div class="container mt-3">
+        <form action="">
+            <div class="mb-3 mt-3 input-group">
+                <label for="contraseña" class="input-group-text">Contraseña:</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña">
+                <i class="bi bi-eye-fill input-group-text toggle-password" id="togglePassword"></i>
+            </div>
+            <div class="mb-3 input-group">
+                <label for="repcontraseña" class="input-group-text">Repetir contraseña:</label>
+                <input type="password" class="form-control" id="repcontraseña" name="repcontraseña">
+                <i class="bi bi-eye-fill input-group-text toggle-password" id="togglePassword2"></i>
+            </div>
         </form>
-      </div>
+    </div>
 
-      <div class="container mt-3">
-        <form action="/action_page.php">
-          <div class="mb-3 mt-3">
-            <label for="fechaNacimiento" class="form-label">Fecha de naciemiento:</label>
-            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
-          </div>
-          <button type="submit" class="btn btn-primary my-3">Enviar</button>
+    <div class="container mt-3">
+        <form action="">
+            <div class="mb-3 mt-3 input-group">
+                <label for="fechaNacimiento" class="input-group-text">Fecha de naciemiento:</label>
+                <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
+            <button type="submit" class="btn btn-primary my-3">Enviar</button>
         </form>
-      </div>
+    </div>
 
 </main>
 
 <footer class="container-fluid bg-black text-light">
- <p>dada</p>
+    <p>dada</p>
 </footer>
 </body>
 

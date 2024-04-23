@@ -19,7 +19,44 @@
 		
 	</style>
 	<script>
-		
+		let isXPlayerTurn = true;
+		let cells = document.querySelectorAll('[data-index]');
+		let mensaje = document.getElementById('mensaje');
+		let limpiar = document.getElementById('limpiar');
+	
+		function placeMark(cellIndex) {
+			let currentPlayer = isXPlayerTurn ? 'X' : 'O';
+			if (!cells[cellIndex].textContent) {
+				cells[cellIndex].textContent = currentPlayer;
+	
+				// Cambiar color de texto del mensaje
+				mensaje.style.backgroundColor = isXPlayerTurn ? 'red' : 'green';
+	
+				isXPlayerTurn = !isXPlayerTurn;
+				mensaje.textContent = `Es el turno de ${isXPlayerTurn ? 'X' : 'O'}`;
+			} else {
+				mensaje.textContent = 'Casilla ocupada';
+			}
+		}
+	
+		function limpiarTablero() {
+			cells.forEach(cell => {
+				cell.textContent = '';
+			});
+	
+			mensaje.style.backgroundColor = 'green';
+			isXPlayerTurn = true;
+			mensaje.textContent = 'Es el turno de X';
+		}
+	
+		cells.forEach(cell => {
+			cell.addEventListener('click', function() {
+				let cellIndex = parseInt(cell.getAttribute('data-index'));
+				placeMark(cellIndex);
+			});
+		});
+	
+		limpiar.addEventListener('click', limpiarTablero);
 	</script>
 </head>
 <body>

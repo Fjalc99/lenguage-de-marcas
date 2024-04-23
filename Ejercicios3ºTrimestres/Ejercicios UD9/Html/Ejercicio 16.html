@@ -20,7 +20,37 @@
         }
         
     </style>
-    
+     <script>
+      let colorCount = 0;
+  
+      function btnGenerar() {
+        let randomColor = getRandomColor();
+        document.body.style.backgroundColor = randomColor;
+  
+        colorCount++;
+        let aviso = document.getElementById('aviso');
+        aviso.innerHTML = `<span class="badge-pill" style="background-color: green;">RGB: ${randomColor}, Total: ${colorCount}</span>`;
+      }
+  
+      function getRandomColor() {
+        let letras = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letras[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+  
+      document.getElementById('btnGenerar').addEventListener('click', btnGenerar);
+  
+      document.getElementById('btnLimpiar').addEventListener('click',
+        function () {
+          document.body.style.backgroundColor = 'white';
+          document.getElementById('aviso').innerHTML = '';
+          colorCount = 0;
+        });
+    </script>
+  
 </head>
 
 <body>

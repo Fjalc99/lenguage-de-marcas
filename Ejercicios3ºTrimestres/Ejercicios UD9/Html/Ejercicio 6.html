@@ -16,7 +16,32 @@
 		function informacion(elEvento) {
 			let evento = elEvento || window.event;
 			
-			muestraInformacion();
+
+		let coordenadaX = evento.clientX;
+		let coordenadaY = evento.clientY;
+
+		let dimensiones = tamanoVentanaNavegador();
+		let tamanoX = dimensiones[0];
+		let tamanoY = dimensiones[1];
+
+		let posicionHorizontal = "";
+		let posicionVertical = "";
+
+		if(coordenadaX > tamanoX/2) {
+  		posicionHorizontal = "derecha";
+		}
+		else {
+  		posicionHorizontal = "izquierda";
+		}
+
+		if(coordenadaY > tamanoY/2) {
+  		posicionVertical = "abajo";
+		}
+		else {
+  		posicionVertical = "arriba";
+		}
+
+		muestraInformacion(['Posicion', posicionHorizontal, posicionVertical]);
 		}
 
 		function muestraInformacion(mensaje) {
@@ -44,8 +69,7 @@
 			
 			return dimensiones;
 		}
-
-
+			document.onmousemove = informacion;
 
 	</script>
 </head>
