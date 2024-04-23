@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<title>Ejercicio 14</title>
-	<meta charset="utf-8">
+	<head>
+		<title>Ejercicio 14</title>
+		<meta charset="utf-8">
 
-	<script>
-		function muestraOculta() {
+		<script>
+		function muestraOculta(id) {
+			let elemento = document.getElementById('contenidos_'+id);
+  			let enlace = document.getElementById('enlace_'+id);
+
+  			if(elemento.style.display == "" || elemento.style.display == "block") {
+    			elemento.style.display = "none";
+    			enlace.innerHTML = 'Mostrar contenidos';
+ 			}
+  			else {
+    			elemento.style.display = "block";
+    			enlace.innerHTML = 'Ocultar contenidos';
+  				}
+
 		}
-	</script>
-</head>
-<body>
-	<p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-	<a id="enlace_1" href="#">Ocultar contenidos</a>
-	<br>
-	<p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-	<a id="enlace_2" href="#">Ocultar contenidos</a>
-	<br>
-	<p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-	<a id="enlace_3" href="#">Ocultar contenidos</a>
 
+				document.addEventListener('DOMContentLoaded', function() {
+    		let enlaces = document.querySelectorAll('a[id^="enlace_"]');
+    		enlaces.forEach(function(enlace) {
+        		let id = enlace.id.split('_')[1]; 
+        		enlace.addEventListener('click', function(event) {
+            		event.preventDefault(); 
+            		muestraOculta(id); 
+        		});
+    		});
+		});
+		</script>
+	</head>
+	<body>
+		<p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat
+			congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+			vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+			aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit
+			convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+			non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+			consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet,
+			consectetuer adipiscing elit. Duis scelerisque.</p>
+		<a id="enlace_1" href="#">Ocultar
+			contenidos</a>
+		<br>
+		<p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat
+			congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+			vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+			aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit
+			convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+			non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+			consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet,
+			consectetuer adipiscing elit. Duis scelerisque.</p>
+		<a id="enlace_2" href="#">Ocultar
+			contenidos</a>
+		<br>
+		<p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat
+			congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+			vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+			aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit
+			convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+			non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna
+			consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet,
+			consectetuer adipiscing elit. Duis scelerisque.</p>
+		<a id="enlace_3" href="#">Ocultar
+			contenidos</a>
 
-</body>
+	</body>
 </html>

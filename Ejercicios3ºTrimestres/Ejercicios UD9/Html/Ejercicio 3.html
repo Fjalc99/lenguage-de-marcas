@@ -11,7 +11,18 @@
 			}
 
 			function anade() {
-				
+				let elemento = document.createElement("li");
+				let texto = document.createTextNode("Elemento de prueba");
+				elemento.appendChild(texto);
+
+
+				let lista = document.getElementById("lista");
+				lista.appendChild(elemento);
+
+
+				let nuevoElemento = "<li> Texto de prueba </li>"
+
+
 			}
 		</script>
 	</head>
@@ -23,7 +34,7 @@
 			<li>Phasellus libero</li>
 			<li>Maecenas nisl arcu</li>
 		</ul>
-		<input type="button" value="Añadir elemento">
+		<input type="button" value="Añadir elemento" click="anade();">
 
 
 	</body>
