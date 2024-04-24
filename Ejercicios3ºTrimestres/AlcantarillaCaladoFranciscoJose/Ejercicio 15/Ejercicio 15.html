@@ -16,47 +16,43 @@
 			font-size: 2em;
 			font-family: 'Major Mono Display', monospace;
 		}
-		
+		.bg-danger {
+    background-color: red !important;
+}
+
+.bg-success {
+    background-color: green !important;
+}
 	</style>
 	<script>
-		let isXPlayerTurn = true;
-		let cells = document.querySelectorAll('[data-index]');
-		let mensaje = document.getElementById('mensaje');
-		let limpiar = document.getElementById('limpiar');
-	
-		function placeMark(cellIndex) {
-			let currentPlayer = isXPlayerTurn ? 'X' : 'O';
-			if (!cells[cellIndex].textContent) {
-				cells[cellIndex].textContent = currentPlayer;
-	
-				// Cambiar color de texto del mensaje
-				mensaje.style.backgroundColor = isXPlayerTurn ? 'red' : 'green';
-	
-				isXPlayerTurn = !isXPlayerTurn;
-				mensaje.textContent = `Es el turno de ${isXPlayerTurn ? 'X' : 'O'}`;
-			} else {
-				mensaje.textContent = 'Casilla ocupada';
-			}
-		}
-	
-		function limpiarTablero() {
-			cells.forEach(cell => {
-				cell.textContent = '';
-			});
-	
-			mensaje.style.backgroundColor = 'green';
-			isXPlayerTurn = true;
-			mensaje.textContent = 'Es el turno de X';
-		}
-	
-		cells.forEach(cell => {
-			cell.addEventListener('click', function() {
-				let cellIndex = parseInt(cell.getAttribute('data-index'));
-				placeMark(cellIndex);
-			});
-		});
-	
-		limpiar.addEventListener('click', limpiarTablero);
+	// Función para inicializar el juego
+function initGame() {
+    // Definir el jugador inicial y el turno
+    let isXPlayerTurn = true;
+    let currentPlayer = 'X';
+
+    // Obtener las casillas y el mensaje
+    let cells = document.querySelectorAll('[data-index]');
+    let mensaje = document.getElementById('mensaje');
+
+    // Agregar evento de clic a las casillas
+    cells.forEach(cell => {
+        cell.addEventListener('click', function() {
+            let cellIndex = parseInt(cell.getAttribute('data-index'));
+            placeMark(cellIndex);
+        });
+    });
+
+    // Agregar evento de clic al botón de limpiar
+    let limpiar = document.getElementById('limpiar');
+    limpiar.addEventListener('click', limpiarTablero);
+
+    // Actualizar el mensaje para indicar que le toca al primer jugador
+    mensaje.innerText = 'Es el turno de X';
+}
+
+// Llamar a la función initGame() cuando se cargue completamente el documento HTML
+document.addEventListener('DOMContentLoaded', initGame);
 	</script>
 </head>
 <body>

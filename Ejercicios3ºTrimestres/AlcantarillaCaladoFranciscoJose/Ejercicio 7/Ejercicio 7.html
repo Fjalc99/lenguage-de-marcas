@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 7</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        
+    </head>
+   
+
+
+    <body>
+        <header class="container-fluid bg-success text-light">
+            <p>Esto es un header</p>
+        </header>
+        <main class="container">
+
+            <div class="container mt-3">
+                <form id="registroForm" action>
+                    <div class="mb-3 mt-3 input-group">
+                        <label for="nombre"
+                            class="input-group-text">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre"
+                            name="nombre">
+                        <div id="nombreError" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <label for="apellidos"
+                            class="input-group-text">Apellidos:</label>
+                        <input type="text" class="form-control" id="apellidos"
+                            name="apellidos">
+                        <div id="apellidosError" class="text-danger"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container mt-3">
+                <form action>
+                    <div class="mb-3 mt-3 input-group">
+                        <label for="dni" class="input-group-text">DNI:</label>
+                        <input type="text" class="form-control" id="dni"
+                            name="dni" pattern="[0-9]{8}[A-Z]{1}">
+                        <div id="dniError" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <label for="correoElectronico"
+                            class="input-group-text">Correo Electronico:</label>
+                        <input type="email" class="form-control"
+                            id="correoElectronico" name="correoElectronico">
+                        <div id="correoElectronicoError"
+                            class="text-danger"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container mt-3">
+                <form action>
+                    <div class="mb-3 mt-3 input-group">
+                        <label for="contraseña"
+                            class="input-group-text">Contraseña:</label>
+                        <input type="password" class="form-control"
+                            id="contraseña" name="contraseña">
+                        <i
+                            class="bi bi-eye-fill input-group-text toggle-password"
+                            id="togglePassword"></i>
+                        <div id="contraseñaError" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <label for="repcontraseña"
+                            class="input-group-text">Repetir contraseña:</label>
+                        <input type="password" class="form-control"
+                            id="repcontraseña" name="repcontraseña">
+                        <i
+                            class="bi bi-eye-fill input-group-text toggle-password"
+                            id="togglePassword2"></i>
+                        <div id="repcontraseñaError" class="text-danger"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container mt-3">
+                <form action>
+                    <div class="mb-3 mt-3 input-group">
+                        <label for="fechaNacimiento"
+                            class="input-group-text">Fecha de
+                            nacimiento:</label>
+                        <input type="date" class="form-control"
+                            id="fechaNacimiento" name="fechaNacimiento">
+                        <div id="fechaNacimientoError"
+                            class="text-danger"></div>
+                    </div>
+                    <button type="button" class="btn btn-primary my-3"
+                        id="enviarBtn">Enviar</button>
+                </form>
+            </div>
+
+        </main>
+
+        <footer class="container-fluid bg-black text-light">
+            <p>Esto es un footer</p>
+        </footer>
+        <script defer>
+            document.getElementById('togglePassword').addEventListener('pointerover', function () {
+    let contraseñaInput = document.getElementById('contraseña');
+    if (contraseñaInput.type === 'password') {
+        contraseñaInput.type = 'text';
+    } else {
+        contraseñaInput.type = 'password';
+    }
+});
+
+document.getElementById('togglePassword2').addEventListener('pointerover', function () {
+    let repContraseñaInput = document.getElementById('repcontraseña');
+    if (repContraseñaInput.type === 'password') {
+        repContraseñaInput.type = 'text';
+    } else {
+        repContraseñaInput.type = 'password';
+    }
+});
+
+
+
+//Ejercicio 9-10-11-12-13-14
+
+function preProcesarDatos() {
+  
+    if (validarNombre() && validarApellidos() && comprobarDNI()) {
+        pasarNombreApellidosAMayusculas();
+        
+    }
+
+}
+
+function validarNombre() {
+    let nombreInput = document.getElementById('nombre');
+    let nombreError = document.getElementById('nombreError');
+    let nombre = nombreInput.value.trim();
+
+    if (nombre === '') {
+        nombreInput.classList.add('is-invalid');
+        nombreError.innerText = 'Por favor, ingrese su nombre.';
+        return false;
+    } else {
+        nombreInput.classList.remove('is-invalid');
+        nombreError.innerText = '';
+        return true;
+    }
+}
+
+document.getElementById('enviarBtn').addEventListener('click', function () {
+  
+    if (validarNombre() && validarApellidos() && comprobarDNI() && comprobarCorreo() && comprobarContrasena() && comprobarEdad()) {
+        pasarNombreApellidosAMayusculas();
+        document.getElementById('registroForm').submit(); 
+    } else {
+        alert('Por favor, complete todos los campos correctamente antes de enviar el formulario.');
+    }
+});
+
+
+function validarNombre() {
+    let nombreInput = document.getElementById('nombre');
+    let nombreError = document.getElementById('nombreError');
+    let nombre = nombreInput.value.trim();
+
+    if (nombre === '') {
+        nombreInput.classList.add('is-invalid');
+        nombreError.innerText = 'Por favor, ingrese su nombre.';
+        return false;
+    } else {
+        nombreInput.classList.remove('is-invalid');
+        nombreError.innerText = '';
+        return true;
+    }
+}
+
+function validarApellidos() {
+    let apellidosInput = document.getElementById('apellidos');
+    let apellidosError = document.getElementById('apellidosError');
+    let apellidos = apellidosInput.value.trim();
+
+    if (apellidos === '') {
+        apellidosInput.classList.add('is-invalid');
+        apellidosError.innerText = 'Por favor, ingrese sus apellidos.';
+        return false;
+    } else {
+        apellidosInput.classList.remove('is-invalid');
+        apellidosError.innerText = '';
+        return true;
+    }
+}
+
+function comprobarDNI() {
+    let dniInput = document.getElementById('dni');
+    let dniError = document.getElementById('dniError');
+    let dni = dniInput.value.trim().toUpperCase(); 
+
+    let letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
+
+    if (/^\d{8}[A-Z]$/.test(dni)) {
+        let letraCalculada = letras.charAt(parseInt(dni, 10) % 23);
+
+        if (letraCalculada === dni.charAt(8)) {
+            dniInput.classList.remove('is-invalid');
+            dniError.innerText = '';
+            return true;
+        } else {
+            dniInput.classList.add('is-invalid');
+            dniError.innerText = 'La letra del DNI no es correcta.';
+            return false;
+        }
+    } else {
+        dniInput.classList.add('is-invalid');
+        dniError.innerText = 'Formato de DNI incorrecto.';
+        return false;
+    }
+}
+
+function comprobarCorreo() {
+    let correoInput = document.getElementById('correoElectronico');
+    let correoError = document.getElementById('correoElectronicoError');
+    let correo = correoInput.value.trim();
+
+    let correoRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (correoRegExp.test(correo)) {
+        correoInput.classList.remove('is-invalid');
+        correoError.innerText = '';
+        return true;
+    } else {
+        correoInput.classList.add('is-invalid');
+        correoError.innerText = 'Formato de correo electrónico incorrecto.';
+        return false;
+    }
+}
+
+function comprobarContrasena() {
+    let contraseñaInput = document.getElementById('contraseña');
+    let repcontraseñaInput = document.getElementById('repcontraseña');
+    let contraseñaError = document.getElementById('contraseñaError');
+    let repcontraseñaError = document.getElementById('repcontraseñaError');
+    let contraseña = contraseñaInput.value.trim();
+    let repcontraseña = repcontraseñaInput.value.trim();
+
+    const contraseñaRegExp = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+    if (contraseña === repcontraseña) {
+        if (contraseñaRegExp.test(contraseña)) {
+            contraseñaInput.classList.remove('is-invalid');
+            repcontraseñaInput.classList.remove('is-invalid');
+            contraseñaError.innerText = '';
+            repcontraseñaError.innerText = '';
+            return true;
+        } else {
+            contraseñaInput.classList.add('is-invalid');
+            repcontraseñaInput.classList.add('is-invalid');
+            contraseñaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
+            repcontraseñaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
+            return false;
+        }
+    } else {
+        contraseñaInput.classList.add('is-invalid');
+        repcontraseñaInput.classList.add('is-invalid');
+        contraseñaError.innerText = 'Las contraseñas no coinciden.';
+        repcontraseñaError.innerText = 'Las contraseñas no coinciden.';
+        return false;
+    }
+}
+
+function pasarNombreApellidosAMayusculas() {
+    let nombreInput = document.getElementById('nombre');
+    let apellidosInput = document.getElementById('apellidos');
+
+    let nombre = nombreInput.value.toUpperCase();
+    let apellidos = apellidosInput.value.toUpperCase();
+
+    nombreInput.value = nombre;
+    apellidosInput.value = apellidos;
+}
+
+function comprobarEdad() {
+    let fechaNacimientoInput = document.getElementById('fechaNacimiento');
+    let fechaNacimientoError = document.getElementById('fechaNacimientoError');
+    let fechaNacimiento = new Date(fechaNacimientoInput.value);
+    let hoy = new Date();
+    let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+    let mes = hoy.getMonth() - fechaNacimiento.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+        edad--;
+    }
+
+    if (edad >= 18) {
+        fechaNacimientoInput.classList.remove('is-invalid');
+        fechaNacimientoError.innerText = '';
+        return true;
+    } else {
+        fechaNacimientoInput.classList.add('is-invalid');
+        fechaNacimientoError.innerText = 'Debe ser mayor de edad';
+        return false;
+    }
+}
+        </script>
+    </body>
+
+</html>
