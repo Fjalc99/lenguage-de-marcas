@@ -69,24 +69,24 @@
             <div class="container mt-3">
                 <form action>
                     <div class="mb-3 mt-3 input-group">
-                        <label for="contraseña"
+                        <label for="contrasenia"
                             class="input-group-text">Contraseña:</label>
                         <input type="password" class="form-control"
-                            id="contraseña" name="contraseña">
+                            id="contrasenia" name="contrasenia">
                         <i
                             class="bi bi-eye-fill input-group-text toggle-password"
                             id="togglePassword"></i>
-                        <div id="contraseñaError" class="text-danger"></div>
+                        <div id="contraseniaError" class="text-danger"></div>
                     </div>
                     <div class="mb-3 input-group">
-                        <label for="repcontraseña"
+                        <label for="repcontrasenia"
                             class="input-group-text">Repetir contraseña:</label>
                         <input type="password" class="form-control"
-                            id="repcontraseña" name="repcontraseña">
+                            id="repcontrasenia" name="repcontrasenia">
                         <i
                             class="bi bi-eye-fill input-group-text toggle-password"
                             id="togglePassword2"></i>
-                        <div id="repcontraseñaError" class="text-danger"></div>
+                        <div id="repcontraseniaError" class="text-danger"></div>
                     </div>
                 </form>
             </div>
@@ -114,20 +114,20 @@
         </footer>
         <script defer>
             document.getElementById('togglePassword').addEventListener('pointerover', function () {
-    let contraseñaInput = document.getElementById('contraseña');
-    if (contraseñaInput.type === 'password') {
-        contraseñaInput.type = 'text';
+    let contraseniaInput = document.getElementById('contrasenia');
+    if (contraseniaInput.type === 'password') {
+        contraseniaInput.type = 'text';
     } else {
-        contraseñaInput.type = 'password';
+        contraseniaInput.type = 'password';
     }
 });
 
 document.getElementById('togglePassword2').addEventListener('pointerover', function () {
-    let repContraseñaInput = document.getElementById('repcontraseña');
-    if (repContraseñaInput.type === 'password') {
-        repContraseñaInput.type = 'text';
+    let repContraseniaInput = document.getElementById('repcontrasenia');
+    if (repContraseniaInput.type === 'password') {
+        repContraseniaInput.type = 'text';
     } else {
-        repContraseñaInput.type = 'password';
+        repContraseniaInput.type = 'password';
     }
 });
 
@@ -248,34 +248,34 @@ function comprobarCorreo() {
 }
 
 function comprobarContrasena() {
-    let contraseñaInput = document.getElementById('contraseña');
-    let repcontraseñaInput = document.getElementById('repcontraseña');
-    let contraseñaError = document.getElementById('contraseñaError');
-    let repcontraseñaError = document.getElementById('repcontraseñaError');
-    let contraseña = contraseñaInput.value.trim();
-    let repcontraseña = repcontraseñaInput.value.trim();
+    let contraseniaInput = document.getElementById('contrasenia');
+    let repcontraseniaInput = document.getElementById('repcontrasenia');
+    let contraseniaError = document.getElementById('contraseniaError');
+    let repcontraseniaError = document.getElementById('repcontraseniaError');
+    let contraseña = contraseniaInput.value.trim();
+    let repcontraseña = repcontraseniaInput.value.trim();
 
     const contraseñaRegExp = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if (contraseña === repcontraseña) {
         if (contraseñaRegExp.test(contraseña)) {
-            contraseñaInput.classList.remove('is-invalid');
-            repcontraseñaInput.classList.remove('is-invalid');
-            contraseñaError.innerText = '';
-            repcontraseñaError.innerText = '';
+            contraseniaInput.classList.remove('is-invalid');
+            repcontraseniaInput.classList.remove('is-invalid');
+            contraseniaError.innerText = '';
+            repcontraseniaError.innerText = '';
             return true;
         } else {
-            contraseñaInput.classList.add('is-invalid');
-            repcontraseñaInput.classList.add('is-invalid');
-            contraseñaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
-            repcontraseñaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
+            contraseniaInput.classList.add('is-invalid');
+            repcontraseniaInput.classList.add('is-invalid');
+            contraseniaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
+            repcontraseniaError.innerText = 'La contraseña debe tener al menos 8 caracteres y combinar letras y números.';
             return false;
         }
     } else {
-        contraseñaInput.classList.add('is-invalid');
-        repcontraseñaInput.classList.add('is-invalid');
-        contraseñaError.innerText = 'Las contraseñas no coinciden.';
-        repcontraseñaError.innerText = 'Las contraseñas no coinciden.';
+        contraseniaInput.classList.add('is-invalid');
+        repcontraseniaInput.classList.add('is-invalid');
+        contraseniaError.innerText = 'Las contraseñas no coinciden.';
+        repcontraseniaError.innerText = 'Las contraseñas no coinciden.';
         return false;
     }
 }
