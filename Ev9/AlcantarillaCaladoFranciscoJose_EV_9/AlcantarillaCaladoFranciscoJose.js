@@ -1,20 +1,78 @@
+let numBocatas = 0;
+let btnActualizar = document.getElementById('actualizar')
+
+
 document.getElementById('verPwd').addEventListener('pointerover', function () {
-    let contraseñaInput = document.getElementById('pwd');
-    if (contraseñaInput.type === 'password') {
-        contraseñaInput.type = 'text';
+    let contraseniaInput = document.getElementById('pwd');
+    if (contraseniaInput.type === 'password') {
+        contraseniaInput.type = 'text';
     } else {
-        contraseñaInput.type = 'password';
+        contraseniaInput.type = 'password';
     }
 });
 
 
+
+
 function validaFormulario() {
+    
+    let todosOk=true;
+    for(let campo of document.forms.formulario.elements){
+        todosOk &&= (campo.value !=='');
+    }
+
+    if(todosOk){
+        let btnTramitar = document.getElementById('tramitar');
+        btnTramitar.classList.remove('btn-info')
+        btnTramitar.classList.add('btn-success');
+        numBocatas+=document.forms.elements.cantidad.value;
+    }
+
+
     
     if (validarCantidad() && validarNombre() && validarApellidos() && comprobarContrasena() ) {
         
     }
 }
 
+
+function actualizarMensajeCarrito() {
+    let divMensaje = document.getElementById('numBocatas')
+    divMensaje.innerText = (numBocatas)? "Su carrito tiene "+numBocatas+  "bocadillos": "total"
+}
+
+
+function actualizarTablaCarrito() {
+    let tabla = document.querySelector('table');
+    let nuevoTr = document.createElement('tr');
+    let tdBocadillo = document.createElement('td');
+    let tdTamano = document.createElement('td');
+    let tdCantidad = document.createElement('td');
+
+    let campos = document.forms.formulario.elements;
+    tdBocadillo.innerText = campos.bocata.vlaue;
+    tdTamano.innerText = campos.tamano.value;
+    tdCantidad.innerText = campos.cantidad.value;
+
+    nuevoTr.append(tdBocadillo);
+    nuevoTr.append(tdTamano);
+    nuevoTr.append(tdCantidad);
+
+    tabla.append(nuevoTr);
+
+}
+
+
+function tramitarPedido() {
+    let modalBody = document.querySelector('.modal-body');
+    if (numBocatas) {
+        let nuevaTabla = document.querySelector('table').cloneNode(true);
+        modalBody.append(nuevaTabla);
+        modalBody.firstElementChild.remove();
+    }else{
+        modalBody.firstElementChild.innerText="debes encargar algo"
+    }
+}
 
 
 
@@ -77,11 +135,10 @@ function comprobarContrasena() {
     }
 }
 
+
+
 document.getElementById('actualizar').addEventListener('click', function () {
   
-    if (validarCantidad() && validarNombre() && validarApellidos() && comprobarContrasena()) {;
-        document.getElementById('formulario').submit(); 
-    } else {
-        alert('Por favor, complete todos los campos correctamente antes de enviar el formulario.');
-    }
+        validaFormulario();
+
 });
