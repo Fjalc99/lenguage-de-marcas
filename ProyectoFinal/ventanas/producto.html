@@ -13,35 +13,93 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../estilos.css">
+<link rel="stylesheet" href="../css/estilos.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <nav id="colorNav" class="navbar navbar-expand-sm">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="../img/logo-rb.png" width="200px" alt="logo del betis"></a>
+          <a id="colorNav" class="navbar-brand"><img src="../img/logo-rb.png" width="200px" alt="logo del betis"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link border" href="javascript:void(0)">Link</a>
+                <a class="nav-link border text-light" href="javascript:void(0)">Balones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link border" href="javascript:void(0)">Link</a>
+                <a class="nav-link border text-light" href="javascript:void(0)">Equipaciónes</a>
               </li>
-              <li class="nav-item border">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+              <li class="nav-item">
+                <a class="nav-link border text-light" href="javascript:void(0)">Accesorios</a>
               </li>
             </ul>
-            <div class="d-flex row">
-                <i class="bi bi-search"></i>
-                <i class="bi bi-cart"></i>
+            <div class="collapse navbar-collapse justify-content-end">
+                <i class="bi bi-search nav-item m-2 p-1 text-light border"></i>
+                <i class="bi bi-cart nav-item m-2 p-1 text-light border"></i>
+                <i class="bi bi-person nav-item m-2 p-1 text-light border"></i>
             </div>
           </div>
         </div>
       </nav>
+
+  
+        <main id="colorMainPortada" class="row justify-content-center">
+          <div class="card col-4 m-5" style="width:450px">
+            <img class="card-img-top" src="../img/balon.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-4 m-5" style="width:450px">
+            <img class="card-img-top" src="../img/balon.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Balon del centenario</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-4 m-5" style="width:450px">
+            <img class="card-img-top" src="../img/balon.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+      </main>
+
+
+
+
+      <footer id="colorFooter" class="container-fluid text-center text-light">
+        <section class="row">
+            <div class="col-12 col-lg-4">
+                <h3>Redes sociales</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <h3>Contacta con nosotros</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <h3>Legal</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </section>
+    
+    
+    </footer>
+
 
 </body>
 </html>
